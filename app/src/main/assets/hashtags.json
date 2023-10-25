@@ -1,0 +1,1347 @@
+{
+  "status": true,
+  "message": "submitted",
+  "data": [
+    {
+      "id": 1,
+      "name": "Popular",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 1,
+          "category": "Popular",
+          "tag_name": "Most popular",
+          "tag_name_detail": "#love #TFLers #tweegram #photooftheday #20likes #amazing #smile #follow4follow #like4like #look #instalike #igers #picoftheday #food #instadaily #instafollow #followme #girl #iphoneonly #instagood #bestoftheday #instacool #instago #all_shots #follow #webstagram #colorful #style #swag",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 2,
+          "category": "Popular",
+          "tag_name": "poppular 1",
+          "tag_name_detail": "#fun #instagramers #food #smile #pretty #followme #nature #lol #dog #hair #onedirection #sunset #swag #throwbackthursday #instagood #beach #statigram #friends #hot #funny #blue #life #art #instahub #photo #cool #pink #bestoftheday #clouds",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 3,
+          "category": "Popular",
+          "tag_name": "popular 2",
+          "tag_name_detail": "#amazing #followme #all_shots #textgram #family #instago #igaddict #awesome #girls #instagood #my #bored #baby #music #red #green #water #harrystyles #bestoftheday #black #party #white #yum #flower #2012 #night #instalove #niallhoran #jj_forum",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 4,
+          "category": "Popular",
+          "tag_name": "popular 3",
+          "tag_name_detail": "#love #instagood #me #tbt #cute #follow #followme #photooftheday #happy #tagforlikes #beautiful #self #girl #picoftheday #like4like #smile #friends #fun #like #fashion #summer #instadaily #igers #instalike #food",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 5,
+          "category": "Popular",
+          "tag_name": "popular 4",
+          "tag_name_detail": "#swag #amazing #tflers #follow4follow #bestoftheday #likeforlike #instamood #style #wcw #family #141 #f4f #nofilter #lol #life #pretty #repost #hair #my #sun #webstagram #iphoneonly #art #tweegram #cool #followback #instafollow #instasize #bored #instacool",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 6,
+          "category": "Popular",
+          "tag_name": "popular 5",
+          "tag_name_detail": "#like #instagood #photooftheday #follow #instalike #instamood #igers #all_shots #picoftheday #instadaily #bestoftheday #igdaily #followme #webstagram #tweegram #instamood #picoftheday #bestoftheday #instadaily #igdaily #instagramhub #instacool #me #photo #twelveskip",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 7,
+          "category": "Popular",
+          "tag_name": "popuar 6",
+          "tag_name_detail": "#funny #mcm #instago #instasize #vscocam #girls #all_shots #party #music #eyes #nature #beauty #night #fitness #beach #look #nice #sky #christmas #baby #cat #sunny #billboard #adele ",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 8,
+          "category": "Popular",
+          "tag_name": "popular 7",
+          "tag_name_detail": "#popular #instagood #iphonesia #photooftheday #instamood #picoftheday #bestoftheday #instadaily #igdaily #instagramhub #instacool #me #photo #twelveskip #picture #yummy",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 9,
+          "category": "Popular",
+          "tag_name": "popular 8",
+          "tag_name_detail": "#smile #instagramers #pretty #food #friends #like #lol #nature #hair #onedirection #swag #beach #funny #bored #life #cool #blue #dog #pink #art #versagram #sunset #hot #photo #instahub #my #tagblender #family #throwbackthursday #cat\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 10,
+          "category": "Popular",
+          "tag_name": "popular 9",
+          "tag_name_detail": "#instagramhub #nice #bored #all_shots eyes #look #throwback #home #loveit #jj #picstitch #colorful #20likes #shoes #instaphoto #snow #instacollage #harrystyles #boyfriend #niallhoran #statigram #tired #in #followback #instagramers #doubletap #model #nike #dog",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Nature",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 11,
+          "category": "Nature",
+          "tag_name": "Nature General",
+          "tag_name_detail": "#nature #sky #sun #summer #beach #beautiful #pretty #sunset #sunrise #blue #flowers #night #tree #twilight #clouds #beauty #light #cloudporn #photooftheday #love #green #skylovers #dusk #weather #day #red #iphonesia #mothernature",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 12,
+          "category": "Nature",
+          "tag_name": "Beach",
+          "tag_name_detail": "#beach #sun #nature #water #TFLers #ocean #lake #instagood #photooftheday #beautiful #sky #clouds #cloudporn #fun #pretty #sand #reflection #amazing #beauty #beautiful #shore #waterfoam #seashore #waves #wave",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 13,
+          "category": "Nature",
+          "tag_name": "Sunset/Sunrise",
+          "tag_name_detail": "#sunset #sunrise #sun #TFLers #pretty #beautiful #red #orange #pink #sky #skyporn #cloudporn #nature #clouds #horizon #photooftheday #instagood #gorgeous #warm #view #night #morning #silhouette #instasky #all_sunsets",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 14,
+          "category": "Nature",
+          "tag_name": "Flowers",
+          "tag_name_detail": "#flowers #flower #petal #petals #nature #beautiful #love #pretty #plants #blossom #sopretty #spring #summer #flowerstagram #flowersofinstagram #flowerstyles_gf #flowerslovers #flowerporn #botanical #floral #florals #insta_pick_blossom #flowermagic #instablooms #bloom #blooms #botanical #floweroftheday",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Weather/Seasons",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 15,
+          "category": "Weather/Seasons",
+          "tag_name": "Sunny",
+          "tag_name_detail": "#sun #sunny #sunnyday #sunnydays #sunlight #light #sunshine #shine #nature #sky #skywatcher #thesun #sunrays #photooftheday #beautiful #beautifulday #weather #summer #goodday #goodweather #instasunny #instasun #instagood #clearskies #clearsky #blueskies #lookup #bright #brightsun",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 16,
+          "category": "Weather/Seasons",
+          "tag_name": "Cloudy",
+          "tag_name_detail": "#clouds #cloud #cloudporn #weather #lookup #sky #skies #skyporn #cloudy #instacloud #instaclouds #instagood #nature #beautiful #gloomy #skyline #horizon #overcast #instasky #epicsky #crazyclouds #photooftheday #cloud_skye #skyback #insta_sky_lovers #iskyhub",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 17,
+          "category": "Weather/Seasons",
+          "tag_name": "Raining",
+          "tag_name_detail": "#rain #raining #rainyday #pouring #rainydays #water #clouds #cloudy #photooftheday #puddle #umbrella #instagood #gloomy #rainyweather #rainydayz #splash #TFLers #downpour #instarain #rains",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 18,
+          "category": "Weather/Seasons",
+          "tag_name": "Snowing",
+          "tag_name_detail": "#snow #snowing #winter #cold #ice #white #weather #sky #skies #frosty #frost #chilly #TFLers #nature #snowflakes #instagood #instawinter #instasnow #photooftheday #snowfall #blizzard #snows #white #Green",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 19,
+          "category": "Weather/Seasons",
+          "tag_name": "Spring",
+          "tag_name_detail": "#spring #blossom #flowers #beautiful #season #seasons #instaspring #instagood #springtime #color #ilovespring #warm #sunny #sun #tree #pretty #TFLers #trees #flower #bloom #colorful #warm #nice ",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 20,
+          "category": "Weather/Seasons",
+          "tag_name": "Summer",
+          "tag_name_detail": "#summer #summertime #sun #hot #sunny #warm #fun #beautiful #sky #clearskys #season #seasons #instagood #instasummer #photooftheday #nature #TFLers #clearsky #bluesky #vacationtime #weather #summerweather #sunshine #summertimeshine",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 21,
+          "category": "Weather/Seasons",
+          "tag_name": "Fall",
+          "tag_name_detail": "#fall #autumn #leaves #falltime #season #seasons #instafall #instagood #TFLers #instaautumn #photooftheday #leaf #foliage #colorful #orange #red #autumnweather #fallweather #nature",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 22,
+          "category": "Weather/Seasons",
+          "tag_name": "Winter",
+          "tag_name_detail": "#winter #cold #holidays #snow #rain #christmas #snowing #blizzard #snowflakes #wintertime #staywarm #cloudy #instawinter #instagood #holidayseason #photooftheday #season #seasons #nature",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Animals",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 23,
+          "category": "Animals",
+          "tag_name": "Animals General",
+          "tag_name_detail": "#animals #animal #pet #dog #cat #dogs #cats #photooftheday #cute #pets #instagood #animales #cute #love #nature #animallovers #pets_of_instagram #petstagram #petsagram #lovely",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 24,
+          "category": "Animals",
+          "tag_name": "Dogs",
+          "tag_name_detail": "#dog #dogs #puppy #pup #cute #eyes #instagood #dogs_of_instagram #pet #pets #animal #animals #petstagram #petsagram #dogsitting #photooftheday #dogsofinstagram #ilovemydog #instagramdogs #nature #dogstagram #dogoftheday #lovedogs #lovepuppies #hound #adorable #doglover #instapuppy #instadog",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 25,
+          "category": "Animals",
+          "tag_name": "Cats",
+          "tag_name_detail": "#cat #cats #catsagram #catstagram #instagood #kitten #kitty #kittens #pet #pets #animal #animals #petstagram #petsagram #photooftheday #catsofinstagram #ilovemycat #instagramcats #nature #catoftheday #lovecats #furry #sleeping #lovekittens #adorable #catlover #instacat",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 26,
+          "category": "Animals",
+          "tag_name": "Horses",
+          "tag_name_detail": "#horses #horse #horsesofinstagram #horseshow #horseshoe #horses_of_instagram #horsestagram #instahorses #wild #mane #instagood #grass #field #farm #nature #pony #ponies #ilovemyhorse #babyhorse #beautiful #pretty #photooftheday #gallop #jockey #rider #riders #riding",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 27,
+          "category": "Animals",
+          "tag_name": "Insects",
+          "tag_name_detail": "#insects #insect #bug #bugs #bugslife #macro #closeup #nature #animals #animals #instanature #instagood #macrogardener #macrophotography #creature #creatures #macro_creature_feature #photooftheday #wildlife #nature_shooters #earth #naturelover #lovenature",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 28,
+          "category": "Animals",
+          "tag_name": "Fish",
+          "tag_name_detail": "#fish #aquarium #fishtank #fishporn #instafish #instagood #swim #swimming #water #coral #reef #reeftank #tropical #tropicalfish #aquaria #photooftheday #saltwater #freshwater #beautiful #ocean #watertank",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Social/People",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 29,
+          "category": "Social/People",
+          "tag_name": "Social/People General",
+          "tag_name_detail": "#love #photooftheday #portrait #baby #me #instamood #cute #friends #hair #swag #igers #picoftheday #girl #guy #beautiful #fashion #instagramers #follow #smile #pretty #followme #photo #life #funny #cool #hot #bored #girls #iphonesia\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 30,
+          "category": "Social/People",
+          "tag_name": "Selfies",
+          "tag_name_detail": "#selfie #selfienation #shamelessselefie #selfies #TFLers #hair #portrait #me #love #pretty #handsome #instagood #instaselfie #selfietime #face #life #igers #fun #followme #instalove #smile #igdaily #eyes #follow",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 31,
+          "category": "Social/People",
+          "tag_name": "Girls",
+          "tag_name_detail": "#girl #girls #love #follow #followme #TFLers #lady #swag #hot #me #cute #picoftheday #beautiful #photooftheday #instagood #fun #smile #pretty #hair #friends #cool #kik #fashion #igers #instagramers #style #sweet #eyes #beauty",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 32,
+          "category": "Social/People",
+          "tag_name": "Guys",
+          "tag_name_detail": "#guys #guy #boy #TFLers #follow #followme #boys #love #me #cute #handsome #picoftheday #photooftheday #instagood #fun #smile #dude #swag #hot #cool #kik #instagramers #eyes #igers",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 33,
+          "category": "Social/People",
+          "tag_name": "Love",
+          "tag_name_detail": "#love #couple #cute#me #girl #boy #beautiful #instagood #instalove #loveher #lovehim #pretty  #adorable #kiss #kisses #hugs #romance #forever #girlfriend #boyfriend #gf #bf #bff #together #photooftheday #happy #fun #smile #xoxo",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 34,
+          "category": "Social/People",
+          "tag_name": "Friends",
+          "tag_name_detail": "#friend #friends #fun #funny #smile #bff #bf #gf #love #instagood #igers #friendship #party #chill #happy #cute #photooftheday #live #forever #best #bestfriend #lovethem #bestfriends #goodfriends #besties #awesome #memories #goodtimes #goodtime",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 35,
+          "category": "Social/People",
+          "tag_name": "Good morning",
+          "tag_name_detail": "#goodmorning #morning #day #daytime #sunrise #morn #awake #wakeup #wake #wakingup #ready #sleepy #breakfast #tired #sluggish #bed #snooze #instagood #earlybird #sky #photooftheday #gettingready #goingout #sunshine #instamorning #work #early #fresh #refreshed",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 36,
+          "category": "Social/People",
+          "tag_name": "Good Night",
+          "tag_name_detail": "#goodnight #night #nighttime #sleep #sleeptime #sleepy #sleepyhead #tired #goodday #instagood #instagoodnight #photooftheday #nightynight #lightsout #bed #bedtime #rest #nightowl #dark #moonlight #moon #out #passout #knockout #knockedout",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Holidays / Celebrations",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 37,
+          "category": "Holidays / Celebrations",
+          "tag_name": "Party",
+          "tag_name_detail": "#party #partying #fun #instaparty #instafun #instagood #bestoftheday #crazy #friend #friends #besties #guys #girls #chill #chilling #kickit #kickinit #cool #love #memories #night #smile #music #outfit #funtime #funtimes #goodtime #goodtimes #happy",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Family",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 48,
+          "category": "Family",
+          "tag_name": "FamilyGeneral",
+          "tag_name_detail": "#family #fam #mom #dad #brother #sister #brothers #sisters #bro #sis #siblings #love #instagood #father #mother #related #fun #photooftheday #children #kids #life #happy #familytime #cute #smile #fun",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 49,
+          "category": "Family",
+          "tag_name": "Babies",
+          "tag_name_detail": "#baby #babies #adorable #cute #cuddly #cuddle #small #lovely #love #instagood #kid #kids #beautiful #life #sleep #sleeping #children #happy #igbabies #childrenphoto #toddler #instababy #infant #young #photooftheday #sweet #tiny #little #family",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 50,
+          "category": "Family",
+          "tag_name": "Kids",
+          "tag_name_detail": "#kids #kid #instakid #child #children #childrenphoto #love #cute #adorable #instagood #young #sweet #pretty #handsome #little #photooftheday #fun #family #baby #instababy #play #happy #smile #instacute",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Art/Photography",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 51,
+          "category": "Art/Photography",
+          "tag_name": "Art",
+          "tag_name_detail": "#art #illustration #drawing #draw #picture #artist #sketch #sketchbook #paper #pen #pencil #artsy #instaart #beautiful #instagood #gallery #masterpiece #creative #photooftheday #instaartist #graphic #graphics #artoftheday",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 52,
+          "category": "Art/Photography",
+          "tag_name": "Photography",
+          "tag_name_detail": "#photo #photos #pic #pics #picture #pictures #snapshot #art #beautiful #instagood #picoftheday #photooftheday #color #all_shots #exposure #composition #focus #capture #moment",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 53,
+          "category": "Art/Photography",
+          "tag_name": "HDR",
+          "tag_name_detail": "#hdr #hdriphoneographer #hdrspotters #hdrstyles_gf #hdri #hdroftheday #hdriphonegraphy #hdrepublic #hdr_lovers #awesome_hdr #instagood #hdrphotography #photooftheday #hdrimage #hdr_gallery #hdr_love #hdrfreak #hdrama #hdrart #hdrphoto #hdrfusion #hdrmania #hdrstyles #ihdr #str8hdr #hdr_edits",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 54,
+          "category": "Art/Photography",
+          "tag_name": "Black & White",
+          "tag_name_detail": "#blackandwhite #bnw #monochrome #instablackandwhite #monoart #insta_bw #bnw_society #bw_lover #bw_photooftheday #photooftheday #bw #instagood #bw_society #bw_crew #bwwednesday #insta_pick_bw #bwstyles_gf #irox_bw #igersbnw #bwstyleoftheday #monotone #monochromatic#noir #fineart_photobw",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 55,
+          "category": "Art/Photography",
+          "tag_name": "Minimalism",
+          "tag_name_detail": "#minimalism #minimalist #minimal #minimalistic #minimalistics #minimalove #minimalobsession #photooftheday #minimalninja #instaminim #minimalisbd #simple #simplicity #keepitsimple #minimalplanet #love #instagood #minimalhunter #minimalista #minimalismo #beautiful #art #lessismore #simpleandpure #negativespace",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 56,
+          "category": "Art/Photography",
+          "tag_name": "Abstract",
+          "tag_name_detail": "#abstract #art #abstractart #abstracters_anonymous #abstract_buff #abstraction #instagood #creative #artsy #beautiful #photooftheday #abstracto #stayabstract #instaabstract",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 57,
+          "category": "Art/Photography",
+          "tag_name": "Instagram",
+          "tag_name_detail": "#instagrammers #igers #instalove #instamood #instagood #followme #follow #comment #shoutout #iphoneography #androidography #filter #filters #hipster #contests #photo #instadaily #igaddict #TFLers #photooftheday #pics #insta #picoftheday #bestoftheday #instadaily #instafamous #popularpic #popularphoto",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Architecture",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 58,
+          "category": "Architecture",
+          "tag_name": "Architecture",
+          "tag_name_detail": "#architecture #building #architexture #city #buildings #skyscraper #urban #design #minimal #cities #town #street #art #arts #architecturelovers #abstract #lines #instagood #beautiful #archilovers #architectureporn #lookingup #style #archidaily #composition #geometry #perspective #geometric #pattern",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 59,
+          "category": "Architecture",
+          "tag_name": "Street Art",
+          "tag_name_detail": "#streetart #street #streetphotography #sprayart #urban #urbanart #urbanwalls #wall #wallporn #graffitiigers #stencilart #art #graffiti #instagraffiti #instagood #artwork #mural #graffitiporn #photooftheday #stencil #streetartistry #stickerart #pasteup #instagraff #instagrafite #streetarteverywhere",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 60,
+          "category": "Architecture",
+          "tag_name": "VSCO",
+          "tag_name_detail": "#vsco #vscocam #vscogood #vscophile #vscogrid #vscogram #vscorussia #vscodaily #liveauthentic #vscobest #bestofvsco #livefolk #vscoedit #vscofilm #vsco_hub #vscofeature #vscoonly #justgoshoot #vsconature #vscolove #vscophoto #vscobrasil #vscostyle #vscoturkey #vscoaward #topvsco #instavsco #vscolover #vscomoment",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 61,
+          "category": "Architecture",
+          "tag_name": "VSCO2",
+          "tag_name_detail": "#vscoeurope #afterlight #vscolife #vscoism #vscovisuals #vscoapp #vscoartist #vscogallery #vscoph #vscocamphotos #visualsoflife #igmasters #visualsgang #vscolovers #vscovibe #letsgosomewhere #neverstopexploring #vscoexpo #vscocamgram #vscogang #streetdreamsmag #vscocamonly #socality #vscomania #lifeofadventure #vscocool #vscomoscow #peoplescreatives #thatsdarling",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Food",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 62,
+          "category": "Food",
+          "tag_name": "Food General",
+          "tag_name_detail": "#food #foodporn #yum #instafood #yummy #amazing #instagood #photooftheday #sweet #dinner #lunch #breakfast #fresh #tasty #food #delish #delicious #eating #foodpic #foodpics #eat #hungry #foodgasm #hot #foods",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 63,
+          "category": "Food",
+          "tag_name": "Dessert",
+          "tag_name_detail": "#dessert #food #desserts #yum #yummy #amazing #instagood #instafood #sweet #chocolate #cake #icecream #dessertporn #delish #foods #delicious #tasty #eat #eating #hungry #foodpics #sweettooth",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 64,
+          "category": "Food",
+          "tag_name": "Drinks",
+          "tag_name_detail": "#drinkup #glass #pub #bar #drink #drinks #wine #beer #beers #photoofthed #slurp #tagblender #drinking #alcohol #yum #yummy #cocacola #nomnomnom #enjoy #thirsty #thirstythursday #liquor #foodforfoodies #getinmybelly #foodporn #cocktails #mmm #sweets #hard #good\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 65,
+          "category": "Food",
+          "tag_name": "Coffee",
+          "tag_name_detail": "#coffee #cafe #instacoffee #cafelife #caffeine #hot #mug #drink #coffeeaddict #coffeegram #coffeeoftheday #cotd #coffeelover #coffeelovers #coffeeholic #coffiecup #coffeelove #coffeemug  #coffeeholic #coffeelife",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 66,
+          "category": "Food",
+          "tag_name": "Tea",
+          "tag_name_detail": "#tea #teatime #instatea #tealife #ilovetea #teaaddict #tealover #tealovers #teagram #healthy #drink #hot #mug #teaoftheday #teacup #teastagram #teaholic #tealove #tealife",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Fashion",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 67,
+          "category": "Fashion",
+          "tag_name": "Fashion General",
+          "tag_name_detail": "#fashion #style #stylish #love #me #cute #photooftheday #nails #hair #beauty #beautiful #instagood #pretty #swag #pink #girl #girls #eyes #design #model #dress #shoes #heels #styles #outfit #purse #jewelry #shopping #glam",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 68,
+          "category": "Fashion",
+          "tag_name": "Fashion (Grils)",
+          "tag_name_detail": "#fashion #style #stylish #love # #me #cute #photooftheday #nails #hair #beauty #beautiful #instagood #instafashion #pretty #girly #pink #girl #girls #eyes #model #dress #skirt #shoes #heels #styles #outfit #purse #jewelry #shopping",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 69,
+          "category": "Fashion",
+          "tag_name": "Fashion (Guys)",
+          "tag_name_detail": "#fashion #swag #style #stylish #me #swagger #cute #photooftheday #jacket #hair #pants #shirt #instagood #handsome #cool #polo #swagg #guy #boy #boys #man #model #tshirt #shoes #sneakers #styles #jeans #fresh #dope",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 70,
+          "category": "Fashion",
+          "tag_name": "OOTD/Outfit Of The Day",
+          "tag_name_detail": "#ootd #outfitoftheday #lookoftheday #TFLers #fashion #fashiongram #style #love #beautiful #currentlywearing #lookbook #wiwt #whatiwore #whatiworetoday #ootdshare #outfit #clothes #wiw #mylook #fashionista #todayimwearing #instastyle #instafashion #outfitpost #fashionpost #todaysoutfit #fashiondiaries",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 71,
+          "category": "Fashion",
+          "tag_name": "Nails",
+          "tag_name_detail": "#nails #nail #fashion #style #cute #beauty #beautiful #instagood #pretty #girl #girls #stylish #sparkles #styles #gliter #nailart #art #opi #photooftheday #essie #unhas #preto #branco #rosa #love #shiny #polish #nailpolish #nailswag",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 72,
+          "category": "Fashion",
+          "tag_name": "Hair",
+          "tag_name_detail": "#hair #hairstyle #instahair #hairstyles #haircolour #haircolor #hairdye #hairdo #haircut #longhairdontcare #braid #fashion #instafashion #straighthair #longhair #style #straight #curly #black #brown #blonde #brunette #hairoftheday #hairideas #braidideas #perfectcurls #hairfashion #hairofinstagram #coolhair",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 73,
+          "category": "Fashion",
+          "tag_name": "Makeup",
+          "tag_name_detail": "#makeup #instamakeup #cosmetic #cosmetics #TFLers #fashion #eyeshadow #lipstick #gloss #mascara #palettes #eyeliner #lip #lips #tar #concealer #foundation #powder #eyes #eyebrows #lashes #lash #glue #glitter #crease #primers #base #beauty #beautiful",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 74,
+          "category": "Fashion",
+          "tag_name": "Jewelry",
+          "tag_name_detail": "#jewelry #jewels #jewel #fashion #gems #gem #gemstone #bling #stones #stone #trendy #accessories #love #crystals #beautiful #ootd #style #fashionista #accessory #instajewelry #stylish #cute #jewelrygram #fashionjewelry",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 75,
+          "category": "Fashion",
+          "tag_name": "Bracelets",
+          "tag_name_detail": "#bracelets #bracelet #armcandy #armswag #wristgame #pretty #love #beautiful #braceletstacks #trendy #instagood #fashion #braceletsoftheday #jewelry #fashionlovers #fashionista #accessories #armparty #wristwear",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 76,
+          "category": "Fashion",
+          "tag_name": "Earrings",
+          "tag_name_detail": "#earrings #earring #earringsoftheday #jewelry #fashion #accessories #earringaddict #earringstagram #fashionista #girl #stylish #love #beautiful #piercing #piercings #pierced #cute #gorgeous #trendy #earringswag #earringfashion #earringlove",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 77,
+          "category": "Fashion",
+          "tag_name": "High Heels",
+          "tag_name_detail": "#highheels #heels #platgorm ##fashion #style #stylish #love #cute #photooftheday #tall #beauty #beautiful #instafashion #girl #girls #model #shoes #styles #outfit #instaheels #fashionshoes #shoelover #instashoes #highheelshoes #trendy #heelsaddict #loveheels #iloveheels #shoestagram",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 78,
+          "category": "Fashion",
+          "tag_name": "Sneakers",
+          "tag_name_detail": "#shoes #shoe #kicks #instashoes #instakicks #sneakers #sneaker #sneakerhead #sneakerheads #solecollector #soleonfire #nicekicks #igsneakercommunity #sneakerfreak #sneakerporn #shoeporn #fashion #swag #instagood #fresh #photooftheday #nike #sneakerholics #sneakerfiend #shoegasm #kickstagram #walklikeus #peepmysneaks #flykicks",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 79,
+          "category": "Fashion",
+          "tag_name": "Tattoos",
+          "tag_name_detail": "#tattoo #tattoos #tat #ink #inked #TFLers #tattooed #tattoist #coverup #art #design #instaart #instagood #sleevetattoo #handtattoo #chesttattoo #photooftheday #tatted #instatattoo #bodyart #tatts #tats #amazingink #tattedup #inkedup\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 80,
+          "category": "Fashion",
+          "tag_name": "Piercings",
+          "tag_name_detail": "#piercing #piercings #pierced #TFLers #bellyrings #navel #earlobe #ear #photooftheday #bellybuttonring #lipring #instagood #modifications #bodymods #piercingaddict #bellybar #bellybuttonpiercing",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Celebrities",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 81,
+          "category": "Celebrities",
+          "tag_name": "One Direction",
+          "tag_name_detail": "#onedirection  #harrystyles #niallhoran #zaynmalik #louistomlinson #liampayne #1d #directioner #1direction #niall #harry #zayn #liam #louis #leeyum #zjmalik #iphonesia #hot #love #cute #happy #beautiful #boys #guys #instagood #photooftheday",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 82,
+          "category": "Celebrities",
+          "tag_name": "Justin Bieber",
+          "tag_name_detail": "#justin #bieber #bieberfever#TFLers #beiber #beiberfever #justinbieberswag #hot #cool #boyfriend #justindrewbieber #instagood #photooftheday #juju #justinb #justindb #justinb #forever #biebs #neversaynever #belieber #believe #believetour #bieberlove",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 83,
+          "category": "Celebrities",
+          "tag_name": "Katy Perry",
+          "tag_name_detail": "#katy #perry #katyperry #TFLers #pretty #beautiful #music #lovethissong #kp #katykats #katykat #katycats #katycat #caligirls #californiagirls #partofme #smile #instagood #instaperry #love #photooftheday #extraterrestrial #teenagedream #wideawake\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 84,
+          "category": "Celebrities",
+          "tag_name": "Liam Payne",
+          "tag_name_detail": "#liampayne #liam #payne #onedirection#1d #directioner #1direction #photooftheday#leeyum #leeyumm #leeyumpayne #brilliam #hot #love #instagood #cute #happy #boys #guys",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 85,
+          "category": "Celebrities",
+          "tag_name": "Taylor Swift",
+          "tag_name_detail": "#taylor #swift #taylorswift #music #TFLers #country #singer #singing #song #instagood #swifties #sweet #cute #beautiful #love #girl #pretty #swiftie #flawless #photooftheday #awesome #tswift #lovesong",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 86,
+          "category": "Celebrities",
+          "tag_name": "Niall Horan",
+          "tag_name_detail": "#niallhoran #niall #horan #onedirection  #1d #directioner #1direction #hot #love #cute #happy #boys #guys #nialler #niallerhoran #photooftheday #niallerwins #niallers #guy #instagood #nialljameshoran #niallisbeautiful #nialhoranfacts #niallimagine #niallisperfect",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 87,
+          "category": "Celebrities",
+          "tag_name": "Darke",
+          "tag_name_detail": "#drake #drizzy #drizzydrake #drakequotes #ymcmb #ovoxo #ovo #xo #teamdrizzy #teamdrake #instadrake #instagood #yolo #takecare #headlines #music #beat #photooftheday #rap #hiphop #rapper #youngmoney #artist",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 88,
+          "category": "Celebrities",
+          "tag_name": "Rihanna",
+          "tag_name_detail": "#rihanna #singer #rihannanavy #navy #rihannanavi #rihannafenty #TFLers #rihannadiamonds #instagood #diamonds #unapologetic #riri #photooftheday #music #pop #robyn #fenty #rih #rihnavy #beautiful #pretty #robynfenty",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 89,
+          "category": "Celebrities",
+          "tag_name": "Selena Gomez",
+          "tag_name_detail": "#selenagomez #selena #gomez #selly #sel #selenamariegomez #TFLers #beautiful #cute #instagood #pretty #gorgeous #hair #selenator #selenators #sellyselena #bestoftheday #selala #love #cutie #pickles #wowp #wizardsofwaverlyplace #beauty",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 90,
+          "category": "Celebrities",
+          "tag_name": "Demi Lovato",
+          "tag_name_detail": "#demilovato #demi #lovato #demetria #lovatics #lovatic #lovaticforever #ddlovato #devonne #staystrong #beautiful #cute #instagood #pretty #giveyourheartabreak #skyscraper #gorgeous #hair #love #cutie #beauty",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 91,
+          "category": "Celebrities",
+          "tag_name": "Ariana Grande",
+          "tag_name_detail": "#ariana #arianagrande #grande #beautiful #pretty #cute #gorgeous #instagood #instaariana #instagrande #photooftheday #actress #arianator #victorious #redhair #teamariana #catvalentine #caterinavalentine #caterina #cat",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Entertainment",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 92,
+          "category": "Entertainment",
+          "tag_name": "Music",
+          "tag_name_detail": "#music #genre #song #songs #melody #hiphop #rnb #pop #love #rap #dubstep #instagood #beat #beats #jam #myjam #party #partymusic #newsong #lovethissong #remix #favoritesong #bestsong #photooftheday #bumpin #repeat #listentothis #goodmusic #instamusic",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 93,
+          "category": "Entertainment",
+          "tag_name": "Movies",
+          "tag_name_detail": "#movies #theatre #video #movie #film #films #videos #actor #actress #cinema #dvd #amc #instamovies #star #moviestar #photooftheday #hollywood #goodmovie #instagood #flick #flicks #instaflick #instaflicks",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 94,
+          "category": "Entertainment",
+          "tag_name": "Books",
+          "tag_name_detail": "#books #book #read #reading #reader #page #pages #paper #instagood #kindle #nook #library #author #bestoftheday #bookworm #readinglist #love #photooftheday #imagine #plot #climax #story #literature #literate #stories #words #text",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 95,
+          "category": "Entertainment",
+          "tag_name": "Video Games",
+          "tag_name_detail": "#videogames #games #gamer #gaming #instagaming #instagamer #playinggames #online #photooftheday #onlinegaming #videogameaddict #instagame #instagood #gamestagram #gamerguy #gamergirl #gamin #video #game #igaddict #winning #play #playing",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 96,
+          "category": "Entertainment",
+          "tag_name": "Anime",
+          "tag_name_detail": "#anime #manga #otaku #kawaii #animegirl #naruto #fairytail #tokyoghoul #attackontitan #animeboy #onepiece #bleach #swordartonline #aot #blackbutler #deathnote #animelover #shingekinokyojin #cosplay #animeworld #snk #animeart #narutoshippuden #sao #yaoi #kaneki #animedrawing #animelove",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 97,
+          "category": "Entertainment",
+          "tag_name": "Disney",
+          "tag_name_detail": "#disney #disneyland #disneyworld #disneygram #disneyside #instadisney #waltdisney #waltdisneyworld #wdw #disneyparks #magickingdom #disneylove #disneyaddict #disneymagic #disneylife #disneyart #disneyfan #disnerd #disneyig #disneyphoto",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Follow/Shoutout/Like/Comment",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 103,
+          "category": "Follow/Shoutout/Like/Comment",
+          "tag_name": "FSLC",
+          "tag_name_detail": "#fslc #followshoutoutlikecomment #follow #shoutout #followme #comment #f4f #s4s #l4l #c4c #followback #shoutoutback #likeback #commentback #love #instagood #photooftheday #pleasefollow #pleaseshoutout #pleaselike #pleasecomment #teamfslcback #fslcback #follows #shoutouts #likes #comments #fslcalways",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Travel/Active/Sports",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 107,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Travel",
+          "tag_name_detail": "#travel #traveling #TFLers #vacation #visiting #instatravel #instago #instagood #trip #holiday #photooftheday #fun #travelling #tourism #tourist #instapassport #instatraveling #mytravelgram #travelgram #travelingram #igtravel",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 108,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Cars",
+          "tag_name_detail": "#cars #car #ride #drive #driver #sportscar #vehicle #vehicles #street #road #freeway #highway #sportscars #exotic #exoticcar #exoticcars #speed #tire #tires #spoiler #muffler #race #racing #wheel #wheels #rim #rims #engine #horsepower",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 109,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Motorcycles",
+          "tag_name_detail": "#motorcycle #motorcycles #bike #ride #rideout #bike #biker #bikergang #helmet #cycle #bikelife #streetbike #cc #instabike #instagood #instamotor #motorbike #photooftheday #instamotorcycle #instamoto #instamotogallery #supermoto #cruisin #cruising #bikestagram",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 110,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Skateboarding",
+          "tag_name_detail": "#skateboarding #skating #skater #instaskater #sk8 #sk8er #sk8ing #sk8ordie #photooftheday #board #longboard #longboarding #riding #kickflip #ollie #instagood #wheels #skatephotoaday #skateanddestroy #skateeverydamnday #skatespot #skaterguy #skatergirl #skatepark #skateboard #skatelife\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 111,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Health/Fitness",
+          "tag_name_detail": "#health #fitness #fit #TFLers #fitnessmodel #fitnessaddict #fitspo #workout #bodybuilding #cardio #gym #train #training #photooftheday #health #healthy #instahealth #healthychoices #active #strong #motivation #instagood #determination #lifestyle #diet #getfit #cleaneating #eatclean #exercise",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 112,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Bodybuilding",
+          "tag_name_detail": "#instafit #motivation #fit #TFLers #fitness #gymlife #pushpullgrind #grindout #flex #instafitness #gym #trainhard #eatclean #grow #focus #dedication #strength #ripped #swole #fitnessgear #muscle #shredded #squat #bigbench #cardio #sweat #grind #lifestyle #pushpullgrind\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 113,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Sport",
+          "tag_name_detail": "#sports #sport #active #fit#football #soccer #basketball #futball #ball #gametime #fun #game #games #crowd #fans #play #playing #player #field #green #grass #score #goal #action #kick #throw #pass #win #winning",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 114,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Running",
+          "tag_name_detail": "#run #runner #running #fit #runtoinspire #furtherfasterstronger #seenonmyrun #trailrunning #trailrunner #runchat #runhappy #instagood #time2run #instafit #happyrunner #marathon #runners #photooftheday #trailrun #fitness #workout #cardio #training #instarunner #instarun #workouttime",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 115,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Dance",
+          "tag_name_detail": "#dance #dancer #dancing #dancerecital #music #song #songs #ballet #dancers #dancefloor #danceshoes #instaballet #studio #instadance #instagood #workout #cheer #choreography #flexible #flexibility #photooftheday #love #practice #fun",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 116,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Cheerleading",
+          "tag_name_detail": "#cheer #cheerleading #cheerleader #TFLers #cheerathletics #stunt #stunting #tumbling #jump #toetouch #flexible #box #stretch #scale #scorpion #backtuck #instacheer #love #cheerstagram #sport #fit #cheerperfection #cheerclassic #instacheerleader #cheerislife #cheering #cheersport #cheerpassion #cheerpractice",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 117,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Gymnastics",
+          "tag_name_detail": "#gymnastics #gymnastic #gymnast #gymnasts #love #fun #flexible #gymnastique #gymnastlife #beam #vault #bars #training #motivation #gym #flip #gym #stunt #sport #git #leap #scale #highbar #flipping",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 118,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Basketball",
+          "tag_name_detail": "#basketball #basket #ball #baller #hoop #balling #sports #sport #court #net #rim #backboard #instagood #game #photooftheday #TFLers #active #pass #throw #shoot #instaballer #instaball #jump #nba #bball",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 119,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Soccer",
+          "tag_name_detail": "#soccer #ball #futbol #futball #kick #pass #shoot #score #goal #field #TFLers #net #team #soccerball #photooftheday #instafutbol #instagood #grass #run #soccergame #fifa #worldcup",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 120,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Football",
+          "tag_name_detail": "#football #ball #pass #footballgame #footballseason #footballgames #footballplayer #instagood #pass #jersey #stadium #field #yards #photooftheday #yardline #pads #touchdown #TFLers #catch #quarterback #fit #grass #nfl #superbowl #kickoff #run\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 121,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Baseball",
+          "tag_name_detail": "#baseball #base #ball #bases #homerun #bat #throw #catch #swing #photooftheday #field #pitcher #TFLers #mlb #firstbase #game #instagood #secondbase #thirdbase #inning #baseballbat #mitt #gloves #out #sport #sports",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 122,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Hockey",
+          "tag_name_detail": "#hockey #hockeystick #puck #ice #rink #icerink #hockeyplayer #instagood #hockeyplayers #fight #photooftheday #shot #skate #TFLers #hockeygram #stanleycup #score #hockeylife #pucklife #nhl",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 123,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Volleybal",
+          "tag_name_detail": "#volleyball #volley #beachvolleyball #vball #volleyballplayer #vleague #instavolley #voleybol #setter #spike #volleyballislife #spiking #ball #net #court #volleyballs #volleybal",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 124,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Rugby",
+          "tag_name_detail": "#rugby #rugbygram #rugbyunion  #rugbypicture #rugbylife  #6nations #instarugby #sixnations #rugbylove #rugbyplayer #usarugby #rugbyplayers #rugbyfamily #rugbyteam #rugbybuildscharacter #rugbyleague #rugbyculture #rugbynation #rugbyislife #rugbyball #rugbywarfare #rugbyforlife",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 125,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Super Bowl",
+          "tag_name_detail": "#superbowl #superbowlxlviii #xlviii #superbowl2016 #2016superbowl #superbowl48 #48 #photooftheday #seavsden #football #nfl #instagood #sb48 #broncos #seahawks #TFLers #seattle #denver #field #touchdown #kickoff #sunday #superbowlweekend\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 189,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Health & Fitness",
+          "tag_name_detail": "#health #fitness #fit #Instag_app #fitnessmodel #fitnessaddict #fitspo #workout #bodybuilding #cardio #gym #train #training #photooftheday #health #healthy #instahealth #healthychoices #active #strong #motivation #instagood #determination #lifestyle #diet #getfit #cleaneating #eatclean #excercise\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 190,
+          "category": "Travel/Active/Sports",
+          "tag_name": "Swimming",
+          "tag_name_detail": "#swimming #swim #water #pool #wet #sport #fit #swimsuit #fast #fun #swimmingpool #swimmer #watersport #watersports #blue #ripple #splash #pool #relaxing #floating #somuchfun #excerise #swimmers",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 191,
+          "category": "Travel/Active/Sports",
+          "tag_name": "General Sports",
+          "tag_name_detail": "#sport #sports #active #fun #fit #fitness #instasport #gym #training #workout #excercise #somuchfun #crowd #train #justdoit #health #fitspo #healthy #gameday #win #winner #score #best #loveit\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Text Art",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 145,
+          "category": "Text Art",
+          "tag_name": "Memes",
+          "tag_name_detail": "░░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄▄\r\n░░░░░█░░░░░░░░░░░░░░░░░░▀▀▄\r\n░░░░█░░░░░░░░░░░░░░░░░░░░░░█\r\n░░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░░█\r\n░▄▀░▄▄▄░░█▀▀▀▀▄▄█░░░██▄▄█░░░░█\r\n█░░█░▄░▀▄▄▄▀░░░░░░░░█░░░░░░░░░█\r\n█░░█░█▀▄▄░░░░░█▀░░░░▀▄░░▄▀▀▀▄░█\r\n░█░▀▄░█▄░█▀▄▄░▀░▀▀░▄▄▀░░░░█░░█\r\n░░█░░░▀▄▀█▄▄░█▀▀▀▄▄▄▄▀▀█▀██░█\r\n░░░█░░░░██░░▀█▄▄▄█▄▄█▄▄██▄░░█\r\n░░░░█░░░░▀▀▄░█░░░█░█▀█▀█▀██░█\r\n░░░░░▀▄░░░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█\r\n░░░░░░░▀▄▄░░░░░░░░░░░░░░░░░░░█\r\n░░▐▌░█░░░░▀▀▄▄░░░░░░░░░░░░░░░█\r\n░░░█▐▌░░░░░░█░▀▄▄▄▄▄░░░░░░░░█\r\n░░███░░░░░▄▄█░▄▄░██▄▄▄▄▄▄▄▄▀\r\n░▐████░░▄▀█▀█▄▄▄▄▄█▀▄▀▄\r\n░░█░░▌░█░░░▀▄░█▀█░▄▀░░░█\r\n░░█░░▌░█░░█░░█░░░█░░█░░█\r\n░░█░░▀▀░░██░░█░░░█░░█░░█\r\n░░░▀▀▄▄▀▀░█░░░▀▄▀▀▀▀█░░█\r\n░░░░░░░░░░█░░░░▄░░▄██▄▄▀\r\n░░░░░░░░░░█░░░░▄░░████\r\n░░░░░░░░░░█▄░░▄▄▄░░▄█\r\n░░░░░░░░░░░█▀▀░▄░▀▀█\r\n░░░░░░░░░░░█░░░█░░░█\r\n░░░░░░░░░░░█░░░▐░░░█\r\n░░░░░░░░░░░█░░░▐░░░█\r\n░░░░░░░░░░░█░░░▐░░░█\r\n░░░░░░░░░░░█░░░▐░░░█\r\n░░░░░░░░░░░█░░░▐░░░█\r\n░░░░░░░░░░░█▄▄▄▐▄▄▄█\r\n░░░░░░░▄▄▄▄▀▄▄▀█▀▄▄▀▄▄▄▄\r\n░░░░░▄▀▄░▄░▄░░░█░░░▄░▄░▄▀▄\r\n░░░░░█▄▄▄▄▄▄▄▄▄▀▄▄▄▄▄▄▄▄▄█\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 146,
+          "category": "Text Art",
+          "tag_name": "Animals",
+          "tag_name_detail": "___________¶¶¶¶¶¶¶¶¶¶¶\r\n________¶¶¶¶¶________¶¶¶¶¶¶\r\n_____¶¶¶¶_________________¶¶¶¶¶¶¶¶¶¶¶¶\r\n____¶¶_______________________¶¶¶__¶¶¶¶¶¶¶\r\n___¶¶___________________________¶¶_¶¶¶¶¶¶¶¶\r\n___¶¶_____¶¶¶¶____________________¶_______¶¶\r\n___¶¶_____¶0_¶_____________________¶¶_¶¶¶¶¶¶¶\r\n_¶¶_____¶________¶¶¶¶_______________¶¶_¶¶\r\n¶¶_____¶___¶¶¶¶¶¶¶¶¶¶¶________¶______¶_¶¶\r\n¶¶__¶¶¶¶¶¶¶¶¶¶_____¶¶_¶_____¶__¶¶_____¶_¶¶\r\n_¶¶¶¶¶¶¶______¶_¶¶__¶_¶_____¶¶¶__¶_______¶\r\n______________¶_¶¶¶¶¶_¶_____¶¶¶¶__¶¶_____¶¶\r\n______________¶_¶¶¶¶¶¶_¶____¶__¶¶¶¶¶¶_____¶\r\n______________¶¶¶¶¶__¶_¶____¶____¶¶¶¶¶____¶¶\r\n_______________¶¶¶___¶¶_¶___¶¶¶¶__¶¶¶¶¶___¶¶\r\n______________________¶__¶__¶¶_¶¶¶__¶¶¶¶___¶\r\n_______________________¶¶¶¶__¶___¶¶__¶¶¶___¶\r\n_________________________¶¶¶¶¶_____¶_¶¶¶¶__¶¶\r\n____________________________________¶_¶¶¶__¶¶\r\n_____________________________________¶¶¶¶¶_¶¶\r\n______________________________________¶¶¶¶_¶¶\r\n______________________________________¶¶¶¶_¶¶\r\n_______________________________________¶_¶_¶\r\n_______________________________________¶___¶\r\n_______________________________________¶¶_¶¶\r\n___________________________________¶¶¶¶¶¶_¶¶¶¶\r\n__________________________________¶¶________¶¶¶¶\r\n_________________________________¶¶___________¶¶¶\r\n_________________________________¶¶_¶_¶¶¶_______¶¶\r\n__________________________________¶¶_¶¶_¶¶¶¶____¶¶\r\n____________________________________________¶¶___¶\r\n_____________________________________________¶__¶\r\n_______________________________________________¶¶_ /╲ ︵ ╱\r\nl (◉) (◉) l\r\n ︶ V︶ /\r\n/↺↺↺↺\r\n↺↺↺↺↺\r\n↺↺↺↺/\r\n¯¯/¯/¯ ░░▒░░█░ \r\n░░▒░█ \r\n░░░█ \r\n░░█░░░░███████ \r\n░██░░░██▓▓███▓██▒ \r\n██░░░█▓▓▓▓▓▓▓█▓███ \r\n██░░██▓▓▓(◐)▓█▓▓█▓█ \r\n███▓▓▓█▓▓▓▓▓█▓█▓▓▓▓█ \r\n▀██▓▓█░██▓▓▓▓██▓▓▓▓▓█ \r\n░▀██▀░░█▓▓▓▓▓▓▓▓▓▓▓▓▓█ \r\n░░░░▒░░░█▓▓▓▓▓█▓▓▓▓▓▓█ \r\n░░░░▒░░░█▓▓▓▓█▓█▓▓▓▓▓█ \r\n░▒░░▒░░░█▓▓▓█▓▓▓█▓▓▓▓█ \r\n░▒░░▒░░░█▓▓▓█░░░█▓▓▓█ \r\n░▒░░▒░░██▓██░░░██▓▓██",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 147,
+          "category": "Text Art",
+          "tag_name": "Chars",
+          "tag_name_detail": "_________________________¶¶¶¶¶\r\n_______________________¶¶¶¶¶11¶¶\r\n_____________________¶¶¶¶111111¶¶\r\n___________________¶¶¶111111111¶¶¶¶\r\n__________________¶¶¶11111111111¶¶¶¶¶¶\r\n_________________¶¶111111111111111111¶¶¶\r\n________________¶¶1111111111111111111111¶\r\n_______________¶¶1111111111111111111111¶¶\r\n_____________¶¶¶111111111111111111111¶¶¶\r\n__________¶¶¶¶¶1111111111111111111111¶¶¶\r\n_________¶¶¶111111111111111111111111111¶¶¶\r\n_______¶¶¶1111111111111111111111111111111¶¶¶\r\n______¶¶11111111111111111111111111111111111¶¶\r\n_____¶¶1111111111111111111111111111111111111¶¶\r\n____¶¶111111111111111111111111111111111111111¶¶\r\n___¶¶11111111111111111111111111111111111111111¶¶\r\n__¶¶1111111111111111111111111¶11111111111111111¶¶\r\n__¶¶¶111111111111111111111¶¶¶¶11111111111111111¶¶\r\n_¶¶¶¶¶¶¶¶1111111111111¶¶¶¶¶¶¶¶¶11111111111111111¶¶\r\n_¶¶¶¶¶¶¶¶¶¶¶¶111111¶¶¶¶¶¶¶¶¶¶¶¶¶1111111111111111¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶111111111111111111111¶\r\n¶¶1111¶________¶¶¶_________¶111111111111111111111¶\r\n¶¶111¶_____¶¶¶_¶¶____¶¶_____¶11111111111111111111¶\r\n¶¶111¶_____¶¶¶_¶¶___¶¶¶¶____¶11111111111111111111¶\r\n¶¶1111¶______¶¶¶¶____¶¶____¶111111111111111111111¶\r\n_¶1111¶¶___¶¶¶___¶¶_______¶¶11111111111111111111¶¶\r\n_¶¶11111¶¶¶¶_______¶¶¶¶¶¶¶1111111111111111111111¶¶\r\n__¶1111¶¶¶___________¶¶¶11111111111111111111111¶¶\r\n__¶¶1¶¶¶_______________¶¶¶¶¶¶¶¶¶¶¶1111111111111¶¶\r\n___¶¶¶¶___$$$$$$$$$$$$$¶¶_____¶¶¶¶¶¶¶111111111¶¶\r\n____¶¶1¶¶$$$$$$$$_____¶¶____________¶¶¶111111¶¶\r\n_____¶¶11¶¶_________¶¶¶_______________¶¶¶111¶¶\r\n______¶¶11¶¶¶______¶¶___________________¶11¶¶\r\n_______¶¶1¶__¶¶¶__¶¶____________________¶¶¶¶\r\n_________¶¶¶____¶¶_____________________¶¶¶\r\n___________¶¶¶_______________________¶¶¶\r\n____________¶¶¶¶_________________¶¶¶¶\r\n________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n_____________¶¶¶¶¶¶¶\r\n___________¶¶¶______¶¶¶\r\n_________¶¶¶___________¶¶\r\n________¶¶______________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n_______¶¶___________________¶_______¶¶¶¶¶\r\n______¶¶________________________________¶¶¶\r\n_____¶¶___________________________________¶¶\r\n____¶¶___________________¶¶________________¶¶\r\n____¶¶___________________¶¶_________________¶\r\n___¶¶____________________¶__________________¶\r\n___¶¶___¶¶__________________________________¶\r\n__¶¶__¶_¶¶¶¶¶_______________________________¶¶\r\n__¶¶_¶¶¶¶¶¶¶¶¶______________________________¶¶¶\r\n__¶__¶¶¶¶¶¶¶¶¶______________________________¶¶¶\r\n__¶_¶¶¶¶¶¶¶¶¶¶¶¶___________________________¶¶\r\n__¶_¶¶¶_¶¶¶_¶¶_¶¶_________________________¶¶\r\n__¶_¶¶_¶¶¶¶¶¶¶¶_¶_______________________¶¶\r\n__¶_¶¶__¶¶¶¶¶¶¶_¶¶___¶¶______________¶¶¶¶\r\n__¶_¶¶__¶¶¶¶¶¶¶_¶¶____¶___________¶¶¶¶\r\n__¶_¶¶¶¶¶¶¶__¶¶_¶¶_____¶¶¶¶___¶¶¶¶¶\r\n___¶_¶¶¶¶¶¶__¶¶_¶__________¶¶¶¶\r\n___¶¶__¶¶¶¶¶¶¶__¶¶¶¶______¶¶¶\r\n____¶¶___¶¶¶___¶¶¶¶¶¶____¶¶\r\n_____¶¶¶_____¶¶¶____¶_____¶¶¶\r\n________¶¶¶¶¶¶_____¶¶¶¶¶¶¶¶¶\r\n____________________¶¶_____¶¶\r\n____________________¶_______¶¶\r\n____________________¶________¶¶\r\n___________________¶¶_________¶¶\r\n___________________¶____¶¶_____¶¶\r\n__________________¶¶____¶¶______¶¶\r\n__________________¶_¶____¶_______¶¶\r\n_________________¶¶_¶____¶¶______¶¶\r\n___________¶¶¶¶__¶¶_¶_____¶______¶¶\r\n____________¶¶¶¶¶¶¶_¶_____¶______¶¶\r\n_____________¶¶__¶_¶______¶_____¶¶¶___¶¶¶\r\n_______________¶¶¶_¶___¶__¶_____¶¶__¶¶¶_¶¶\r\n_____________¶¶__¶_¶¶__¶_¶¶___¶¶___¶¶____¶¶\r\n____________¶¶¶¶__¶_¶¶¶¶¶_____¶¶__¶¶_____¶¶\r\n___________¶¶__¶¶¶¶____________¶¶¶_______¶¶\r\n___________¶¶___¶¶____¶¶¶¶¶_____¶_____¶_¶¶\r\n____________¶________¶____¶____________¶¶\r\n____________¶_______¶¶____¶¶______¶¶___¶¶\r\n____________¶¶_______¶¶___¶¶________¶¶¶¶\r\n_____________¶¶_______¶¶_¶¶_________¶¶\r\n_____________¶¶__¶¶____¶¶_________¶¶\r\n______________¶¶_¶¶_¶__¶_______¶¶¶¶\r\n_______________¶¶¶__¶¶¶¶¶__¶¶¶¶¶\r\n_________________¶¶¶¶¶__¶¶¶¶¶\r\n",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 148,
+          "category": "Text Art",
+          "tag_name": "Logos",
+          "tag_name_detail": "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶§§§1§§¶¶\r\n¶¶¶¶¶¶_§¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶§1___1§§¶¶¶¶¶\r\n¶¶¶¶§__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶§1______§¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶§___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶§§1_______1§¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶____1¶¶¶¶¶¶¶¶¶¶§11_________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶_______11111____________§¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶____________________§¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶_______________1§¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶__________1§¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶§§§¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ _______________$$$$$$\r\n__________$$$$$_$$$$$$____$\r\n$$$$__________$$$$$$$$$_$$$$$\r\n$$$$$$_____$$$$$$$$$$$$$$__$$$\r\n__$$$$$$____$$$$$$$$$$$$$__$$$\r\n_____$$$$$__$$$$$$$$$$$_$$__$$\r\n_______$$$$$$$$$$$$$$$$__$$__$\r\n_$$$$$$$$$$$$$$$$$$$$_____$\r\n$$$$$$$$$$$$$$$$$$$$$_____$$\r\n_$$$$______$$$$$$$$$$______$\r\n____________$$$$$$$$$$____$$\r\n___________$$$$$$$$$$$$$$$$\r\n__________$$$$$$$$$$$$$$\r\n_________$$$$$$$$$$$$$$$$\r\n________$$$$$$$___$$$$$$$$$\r\n________$$$$$$_______$$$$$$$\r\n___$$$_$$$$$____________$$$$\r\n__$$$$$$$$$_________$$$$$$$$\r\n___$$$$$$$_________$$$$$$$$$__________________________________________________\r\n_________________________¶________________________\r\n________________________¶¶¶_______________________\r\n_______________________¶¶¶¶¶______________________\r\n______________________¶¶¶¶¶¶¶_____________________\r\n_____________________¶¶¶¶¶¶¶¶¶____________________\r\n____________________¶¶¶¶¶¶¶¶¶¶¶___________________\r\n___________________¶¶¶¶¶¶¶¶¶¶¶¶¶__________________\r\n__________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_________________\r\n__________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶________________\r\n____________________¶¶¶¶¶¶¶¶¶¶¶_¶_________________\r\n_____________________¶¶¶¶¶¶¶¶¶_¶__________________\r\n______________________¶¶¶¶¶¶¶_¶___________________\r\n_______________________¶¶¶¶¶_¶____________________\r\n________________________¶¶¶_¶_____________________\r\n_________________________¶_¶______________________\r\n__________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_______\r\n_________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶______\r\n________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____\r\n_______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____\r\n______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___\r\n_____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶__________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__\r\n___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_\r\n__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶______________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n___________________________$$\r\n _________________________$$$$\r\n _______________________$$$$$$\r\n ______________________$$$$$$\r\n ______________________$$$$\r\n ______________________$$\r\n _________$$$$$$$$$$$$$_$$$$$$$$$$$$$\r\n ______$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n ____$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n ___$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n __$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n _$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n _$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n _$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n _$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n __$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n ___$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n ____$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n _____$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n ______$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n ________$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n __________$$$$$$$$$$$$$$$$$$$$$$$$$\r\n ____________$$$$$$$$$$$$$$$$$$$$$\r\n ______________$$$$$$$$__$$$$$$",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 150,
+          "category": "Text Art",
+          "tag_name": "Tattoos",
+          "tag_name_detail": "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶\r\n¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶\r\n¶¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶\r\n¶¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶\r\n¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____¶¶\r\n¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____¶¶\r\n¶¶¶______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____¶¶¶\r\n¶__8______¶¶¶¶¶¶¶¶_¶¶¶¶¶¶¶_¶¶¶¶¶¶¶¶______8__¶\r\n¶___88______¶¶¶¶¶__¶¶¶¶¶¶¶__¶¶¶¶¶_______8___¶\r\n¶____88________¶¶¶___¶_¶___¶¶¶¶_______88____¶\r\n¶¶_____888_______¶¶_______¶¶_______888_____¶¶\r\n¶¶________8888____¶¶_____¶¶____88888_______¶¶\r\n¶¶¶___________888___________888___________¶¶¶\r\n¶¶¶_88___________88________8___________88_¶¶¶\r\n¶¶¶___8888888__________________88888888___¶¶¶\r\n¶¶¶¶_______8888888__88_88__8888888_______¶¶¶¶\r\n¶¶¶¶¶________________8_8_________________¶¶¶¶\r\n¶¶¶¶¶¶___________88__8_8__888___________¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶___88888____8_8_____8888____¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶___8_____________________8____¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶__________¶_88_88_¶__________¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶________¶__888__¶¶_______¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶____¶¶¶__888__¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___888___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____888_____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____88888_____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____8888888____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____8888888____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__8888888__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_8888888_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n___________________________________________________________\r\n___________________________________________________________\r\n___________________________________________________________\r\n____¶_________________________________________________¶____\r\n_____¶_______________________________________________¶_____\r\n______¶_____________________________________________¶______\r\n_______¶¶¶_______________________________________¶¶¶_______\r\n_________¶¶¶¶_________________________________¶¶¶¶_________\r\n_____¶_____¶_¶¶¶___________________________¶¶¶_¶_____¶_____\r\n______¶¶________¶¶_______________________¶¶________¶¶______\r\n______¶¶¶¶¶________¶¶_________________¶¶________¶¶¶¶¶______\r\n_______¶¶¶¶¶¶¶¶______¶¶______________¶______¶¶¶¶¶¶¶¶_______\r\n_________¶¶¶¶¶¶¶¶¶¶____¶___________¶____¶¶¶¶¶¶¶¶¶¶_________\r\n_____________¶¶¶¶¶¶¶¶¶___¶_______¶___¶¶¶¶¶¶¶¶¶_____________\r\n________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶_____¶_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\r\n____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____________\r\n______________¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶______________\r\n_____________¶___¶¶¶__¶¶¶_________¶¶¶__¶¶¶___¶_____________\r\n_________________¶__¶______¶___¶______¶__¶_________________\r\n___________________¶____¶¶¶_____¶¶¶____¶___________________\r\n______________________¶¶¶¶_______¶¶¶¶______________________\r\n____________________¶¶¶¶¶_________¶¶¶¶¶____________________\r\n__________________¶¶¶¶¶¶___________¶¶¶¶¶¶__________________\r\n_________________¶¶¶¶¶¶_____________¶¶¶¶¶¶_________________\r\n________________¶¶¶¶¶¶¶_____________¶¶¶¶¶¶¶________________\r\n________________¶¶¶¶¶_¶_____________¶_¶¶¶¶¶________________\r\n_______________¶_¶¶¶¶__¶______________¶¶¶¶_¶_______________\r\n_______________¶¶__¶¶_________________¶¶__¶¶_______________\r\n____________________¶_________________¶____________________\r\n______________¶_____________________________¶______________\r\n______________¶_____________________________¶_________________________________________________________________________\r\n___________________________¶___¶___________________________\r\n__________________________¶_____¶__________________________\r\n_________________________¶_______¶_________________________\r\n________________________¶_________¶________________________\r\n________________________¶_________¶________________________\r\n_______________________¶¶_________¶¶_______¶_______________\r\n_______________¶_______¶___________¶_______¶_______________\r\n_______________¶______¶¶___________¶¶______¶_______________\r\n_______________¶¶_____¶¶___________¶¶_____¶¶_______________\r\n_________¶_____¶¶_____¶¶___________¶¶_____¶¶_____¶_________\r\n_________¶¶_____¶_____¶¶___________¶¶_____¶¶_____¶_________\r\n_________¶¶_____¶¶____¶¶___________¶¶____¶¶_____¶¶_________\r\n__________¶¶____¶¶¶___¶¶¶_________¶¶¶___¶¶¶____¶¶__________\r\n___________¶¶¶___¶¶¶__¶¶¶_________¶¶¶__¶¶¶____¶¶___________\r\n____________¶¶¶___¶¶¶__¶¶¶_______¶¶¶¶_¶¶¶___¶¶¶____________\r\n_____________¶¶¶¶¶_¶¶¶¶¶¶¶¶______¶¶¶¶¶¶¶_¶¶¶¶¶_____________\r\n_______________¶¶¶¶¶¶¶¶¶¶¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶______________\r\n_______________¶¶¶¶¶___¶¶¶¶¶¶_¶¶¶¶¶¶___¶¶¶¶¶_______________\r\n______________¶¶¶¶________¶¶¶¶¶¶¶________¶¶¶¶______________\r\n______________¶¶¶_____¶____¶¶¶¶¶____¶_____¶¶¶______________\r\n_____________T¶¶________¶___¶¶¶___¶________¶¶¶_____________\r\n_____________¶¶¶________¶¶___¶___¶¶________¶¶¶_____________\r\n______________¶¶¶_______¶¶¶_____¶¶¶_______¶¶¶______________\r\n_______________¶¶¶_____¶¶¶¶¶___¶¶¶¶¶_____¶¶¶¶______________\r\n________________¶¶¶¶¶¶¶¶¶_¶¶___¶¶_¶¶¶¶¶¶¶¶¶________________\r\n__________________¶¶¶¶¶___¶¶___¶¶___¶¶¶¶¶__________________\r\n__________________________¶¶___¶¶__________________________\r\n__________________________¶¶___¶¶__________________________\r\n__________________________¶_____¶__________________________\r\n_________________________¶¶_____¶¶_________________________\r\n_________________________¶_______¶_________________________\r\n________________________¶_________¶________________________\r\n______________________¶_____________¶______________________\r\n___________________________________________________________ ____________________________________________________\r\n____________________________¶_______________________\r\n___________________________¶¶¶______________________\r\n___________________________¶¶¶¶_____________________\r\n________________________¶¶¶¶¶¶¶¶¶___________________\r\n_______________________¶¶¶¶¶¶¶¶¶¶¶__________________\r\n___________________________¶¶¶______________________\r\n____________________________¶¶______________________\r\n___________________¶¶¶¶¶¶¶____¶¶¶¶¶¶________________\r\n_______________¶¶¶¶¶¶¶¶¶¶¶¶¶¶_______¶¶______________\r\n_____________¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶_____¶______________\r\n___________¶¶_________¶¶¶¶¶¶¶¶¶¶¶¶___¶______________\r\n__________¶¶____________¶¶¶¶¶¶¶¶¶¶¶_¶¶______________\r\n_________¶¶¶_____________¶¶¶¶¶¶¶¶¶¶¶¶_______________\r\n_________¶¶¶_______________¶¶¶¶¶¶¶¶¶________________\r\n________¶¶¶¶¶_______________¶¶¶¶¶¶__________________\r\n________¶¶¶¶¶¶_______________¶¶¶¶__________¶¶¶¶¶¶___\r\n_____¶¶_¶¶¶¶¶¶¶¶______________¶¶_________¶¶¶¶¶¶¶¶¶__\r\n_____¶¶_¶¶¶¶¶¶¶¶¶¶____________¶_________¶___¶¶¶¶¶¶__\r\n_____¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶_______¶¶________¶'____¶¶¶¶___\r\n_____¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________¶_____________\r\n_____¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____¶¶_____________\r\n_____¶¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶______________\r\n_____¶¶¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____________\r\n_____¶¶¶¶¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________\r\n______¶¶¶¶¶¶¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶______\r\n_______¶¶¶¶¶¶¶¶¶¶_______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____\r\n________¶¶¶¶¶¶¶¶¶¶¶¶¶¶_______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___\r\n_________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__\r\n__________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶______¶¶¶¶¶¶¶¶¶¶¶¶¶_\r\n___________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____¶¶¶¶¶¶¶¶¶¶¶\r\n_____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____¶¶¶¶¶¶¶¶\r\n________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶¶¶¶\r\n____________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶¶¶\r\n_____________________¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶¶\r\n____________________¶________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶\r\n___________________¶________¶¶____¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶\r\n________¶¶¶¶______¶_________¶________¶¶¶¶¶¶¶¶__¶¶¶¶¶\r\n_______¶¶¶¶¶¶___¶¶_________¶___________¶¶¶¶¶¶__¶¶¶¶_\r\n_______¶¶¶¶¶¶¶¶¶__________¶_____________¶¶¶¶__¶¶¶¶__\r\n________¶¶¶¶¶____________¶______________¶¶¶___¶¶¶___\r\n________________________¶_______________¶¶___¶¶¶____\r\n___________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___________¶¶___¶¶¶_____\r\n_______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___________¶¶_______\r\n____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_______¶_________\r\n__¶¶¶¶¶¶______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶__________\r\n_¶¶¶______________¶¶_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____________\r\n¶¶_______________¶______¶¶¶¶¶¶¶¶¶¶¶¶¶¶______________\r\n¶______________¶¶_________¶¶¶¶¶¶¶¶¶¶________________\r\n¶____________¶¶___________¶_¶¶¶¶¶¶__________________\r\n¶¶_________¶¶_____________¶___¶¶¶___________________\r\n_¶¶¶¶¶¶¶¶¶¶_______________¶____¶____________________\r\n__________________________¶_________________________\r\n__________________________¶¶________________________\r\n_________________________¶¶¶¶_______________________\r\n_________________________¶¶¶¶_______________________",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 151,
+          "category": "Text Art",
+          "tag_name": "Sport",
+          "tag_name_detail": "_____________________________000__________________\r\n___________________________0¶¶¶¶¶¶________________\r\n___________________________¶¶¶¶¶¶¶________________\r\n_______________________0¶0__0¶¶¶0_________________\r\n______________________0¶¶¶___0____________________\r\n______________________0¶¶¶__¶¶¶___________________\r\n_______________________¶¶¶_0¶¶¶___________________\r\n_______________________0¶¶¶0¶¶0___________________\r\n________________0¶¶¶¶¶0_0¶¶0¶¶0___________________\r\n________________¶¶¶¶¶¶¶¶__0¶¶¶¶___________________\r\n________________¶¶¶¶¶¶¶¶¶___0¶¶¶__________________\r\n______0_________¶¶¶¶0¶¶¶¶0_____0¶_________________\r\n_____0¶_________¶¶¶¶__¶¶¶¶______00________________\r\n____0¶___0¶¶¶¶¶¶¶¶¶0__0¶¶¶_______00_______________\r\n____0¶______0¶¶¶¶00____¶¶¶________00______________\r\n______________________¶¶¶__________00_____________\r\n_____________________00¶____________00____________\r\n____________________0¶_______________00___________\r\n__________________0¶__________________00__________\r\n________________00¶____________________00__000____\r\n_________________0000___________________00000_____\r\n__________________________________________________\r\n ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶11_____1¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1__________1¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1_____________¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_______________¶11\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1__________________\r\n¶¶¶¶¶¶¶1____1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1________________¶¶\r\n¶¶¶¶¶__________¶¶¶¶¶¶¶¶¶¶¶11____________________¶¶\r\n¶¶¶¶____________¶¶¶¶11_____11___1______________1¶¶\r\n¶¶¶1__________________11¶¶¶¶¶__1¶1_____________¶¶¶\r\n¶¶¶1_______________¶¶¶¶¶¶¶¶¶¶__1¶¶¶__________1¶¶¶¶\r\n¶¶¶______________1¶¶¶¶¶¶¶¶¶¶____¶¶¶¶¶11__111¶¶¶¶¶¶\r\n¶¶¶1_____________¶¶¶¶¶¶¶¶¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶____________¶¶____1¶¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶___________________¶¶1___1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶11111¶1__________¶1____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_________1¶_____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_______________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_______________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1_____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶1____________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶1____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶1___________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶1___________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1___________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n__________________________________________________\r\n______¶___________________________________________\r\n____1¶¶1__________________________________________\r\n_____¶¶¶1_________________________________________\r\n______1¶¶¶¶¶¶11_______________1111________________\r\n__________1¶¶¶¶¶¶¶¶1_________¶¶¶¶¶¶_______________\r\n______________11¶¶¶¶¶¶¶1¶1__¶¶¶¶¶¶¶1______________\r\n_________________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_______________\r\n__________________11¶¶¶¶¶¶¶¶¶¶¶¶¶¶________________\r\n______________________¶¶¶¶¶¶¶¶¶¶¶¶¶_______________\r\n______________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____________\r\n_____________________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___________\r\n_____________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1_______\r\n_________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__1¶¶1¶¶¶¶¶¶1____\r\n________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1__111¶¶1___\r\n_______________1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___________\r\n_______________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___________\r\n______________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1¶¶¶¶1___________\r\n_____________¶¶¶¶¶_1¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶____________\r\n____________¶¶¶¶¶_____1111¶¶11___¶¶¶¶1____________\r\n__________¶¶¶¶¶¶1______________1¶¶¶¶¶1____________\r\n________1¶¶¶¶¶¶1______________¶¶¶¶¶¶¶1____________\r\n____¶¶1¶¶¶¶¶¶¶1_111111111_____1¶¶¶¶¶¶_____________\r\n____1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1____________\r\n______11¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1_____________\r\n__________1¶1_______________1¶1___________________\r\n___________¶1________________¶1___________________\r\n__________________________________________________\r\n__________________________________________________",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 153,
+          "category": "Text Art",
+          "tag_name": "Buildings",
+          "tag_name_detail": "____________^v^_____^v^\r\n_________¶¶¶¶___^v^\r\n_______¶¶¶¶¶¶¶_____^v^\r\n______¶¶¶¶¶¶¶¶¶¶_________/\r\n____¶¶¶¶¶¶¶¶¶¶¶¶¶_____--- ---\r\n__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____/_\r\n___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____^v^\r\n____¶¶¶¶¶¶¶¶¶¶¶¶¶________^v^\r\n_______¶¶I_I¶¶¶¶_______¶¶¶¶\r\n_________I_I___________¶¶¶¶\r\n___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n___¶_________________________¶\r\n___¶__¶¶¶¶¶¶__¶¶¶¶¶__¶¶¶¶¶___¶\r\n___¶__¶¶¶¶¶¶__¶¶¶¶¶__¶¶¶¶¶___¶\r\n___¶__¶¶¶¶¶¶__¶¶¶¶¶__¶¶¶¶¶___¶\r\n___¶__¶¶¶¶¶¶_________________¶__o\r\n___¶__¶¶¶¶¶¶_________________¶_(|/)\r\n___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ _______________ZZZ__Z____$ \r\n______________Z____ZZ___$$$ \r\n____________ZZ____ZZ___$$$$$ \r\n____________Z___ZZ____$$___$$ \r\n____________$$$$_____$$_____$$ \r\n____________$__$____$$_______$$ \r\n____________$__$___$$____#____$$ \r\n__________$$$$$$$$$$____###___$$ \r\n_________$ZZZZZZZ$$______#______$$ \r\n________$ZZZZZZZ$$_______________$$ \r\n_______$ZZZZZZZ$$_________________$$ \r\n______$ZZZZZZZ$$__$$$$$$$_$$$$$$$__$$ \r\n______$$_$|$_$$____$_$$$_$_$_$$$_$__$$ \r\n______$$_$|$_$$____$$$$$$$_$$$$$$$___$$ \r\n____$$$$$$$$$$$_____________________$$ \r\n___$ZZZZZZZZZZ$$$$$$$$$$$$$$$$$$$$$$$$ \r\n__$ZZZZZZZZZZZ$ZZZZZZZZZZZZZZZZZZZZZZ$ \r\n_$ZZZZZZZZZZZ$ZZZZZZZZZZZZZZZZZZZZZZZZ$ \r\n$ZZZZZZZZZZZ$ZZZZZZZZZZZZZZZZZZZZZZZZZZ$ \r\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ \r\n__$$_$__$__$___$$__$ZZZZ$___$$_$__$__$_$$ \r\n__$$_$__$__$___$$__$_ZZ_$___$$_$__$__$_$$ \r\n__$$ZZZZZZZZZZZ$$__$___#$___$$ZZZZZZZZZ$$ \r\n__$$_#_#_#_#_#$$_ $_ZZ_$___$$#_#_#_#_$$ \r\n__$$#_#_#_#_#_$$__$$$$$$___$$_#_#_#_#$$ \r\n__$$$$$$$$$$$$$$##########$$$$$$$$$$$$$\r\n_________________¶\r\n________________¶_¶\r\n_______________¶___¶\r\n_________¶¶¶¶_¶_____¶\r\n_________¶__¶¶_______¶\r\n_________¶__¶_________¶\r\n_________¶_¶___________¶\r\n_________¶¶_____¶¶¶_____¶\r\n_________¶_____¶___¶_____¶\r\n________¶_______¶¶¶_______¶\r\n_______¶___________________¶\r\n______¶_____________________¶\r\n_____¶_______________________¶\r\n____¶_________________________¶\r\n___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n___¶___________________________¶\r\n___¶___________________________¶\r\n___¶__¶¶¶¶¶¶___________________¶\r\n___¶____________¶¶¶¶¶¶¶¶¶¶¶____¶\r\n___¶__¶¶¶¶¶¶____¶___¶_¶___¶____¶\r\n___¶__¶____¶____¶__¶___¶__¶____¶\r\n___¶__¶_¶¶_¶____¶_¶_____¶_¶____¶\r\n___¶__¶____¶____¶¶¶¶¶¶¶¶¶¶¶____¶\r\n___¶__¶¶___¶___________________¶\r\n___¶__¶____¶___________________¶\r\n___¶__¶____¶___________________¶\r\n___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n_____¶¶\r\n____¶¶¶¶\r\n___¶¶¶¶¶¶\r\n___¶¶¶¶¶¶\r\n__¶¶¶¶¶¶¶¶\r\n_¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶__¶_¶¶¶¶\r\n¶¶¶__¶___¶¶¶\r\n¶¶¶___¶¶_¶¶¶\r\n¶¶¶¶____¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶\r\n_¶¶_¶¶¶¶_¶¶\r\n_¶¶_¶¶¶¶_¶¶\r\n_¶¶_¶¶¶¶_¶¶\r\n_¶¶_¶¶¶¶_¶¶\r\n_¶¶_¶¶¶¶_¶¶\r\n_¶¶_¶¶¶¶_¶¶\r\n_¶¶_¶¶¶¶_¶¶\r\n_¶¶_¶¶¶¶_¶¶_______________________________________¶\r\n_¶¶_¶¶¶¶_¶¶______________________________________¶¶¶\r\n_¶¶_¶¶¶¶_¶¶____¶____¶____¶____¶____¶____¶____¶___¶¶¶\r\n_¶¶_¶¶¶¶_¶¶___¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶_¶¶¶¶¶\r\n_¶¶_¶¶¶¶_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n_¶¶_¶¶¶¶_¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶¶\r\n_¶¶_¶¶¶¶_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n_¶¶_¶¶¶¶_¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶¶\r\n_¶¶_¶¶¶¶_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n_¶¶_¶¶¶¶_¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶__¶¶¶¶\r\n_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n_____________________¶\r\n____________________¶¶¶\r\n_____________________¶\r\n____________________¶¶¶\r\n___________________¶¶_¶¶\r\n__________________¶¶___¶¶\r\n_________________¶¶_____¶¶\r\n________________¶¶_______¶¶\r\n_______________¶¶_________¶¶\r\n_______________¶___________¶\r\n_______________¶___________¶\r\n_______________¶___________¶\r\n_______________¶¶_________¶¶\r\n________________¶¶¶¶¶¶¶¶¶¶¶\r\n_________________¶¶¶¶¶¶¶¶¶\r\n________________¶_________¶\r\n________¶¶¶¶¶¶¶¶¶_________¶_______¶\r\n_______¶§§§§§§§§¶____¶____¶______¶§¶\r\n______¶§_§_§_§_§¶___¶¶¶___¶_____¶§¶§¶\r\n_____¶§_§_§_§_§_¶__¶_¶_¶__¶____¶§¶_¶§¶\r\n____¶___________¶_¶__¶__¶_¶___¶§¶___¶§¶\r\n___¶____________¶_¶__¶__¶_¶__¶§¶__§__¶§¶\r\n__¶_____________¶_¶__¶__¶_¶_¶§¶__§§§__¶§¶\r\n_¶______________¶_¶__¶__¶_¶¶§¶__§§§§§__¶§¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶__¶__¶_¶§¶__§§§§§§§__¶§¶\r\n_¶______________¶_¶__¶__¶_¶_¶_§§§§§§§§§__¶¶¶\r\n_¶__§§__§§__§§__¶¶¶¶¶¶¶¶¶¶¶¶¶_¶¶¶¶¶¶¶¶¶_§_¶¶¶\r\n_¶__§§__§§__§§_¶¶___________¶¶¶_______¶_§_¶\r\n_¶__§§__§§__¶¶¶_______________¶¶______¶_§_¶\r\n_¶__§§__§¶¶¶___¶¶¶¶¶____________¶¶____¶_§_¶\r\n_¶__§§¶¶¶___________¶¶¶¶__________¶¶__¶_§_¶\r\n_¶__¶¶__________________¶¶__________¶¶¶_§_¶\r\n_¶_¶______________________¶¶___________¶¶__¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____§§___§§§§§_§§§§§§§§§§§",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 155,
+          "category": "Text Art",
+          "tag_name": "Transport",
+          "tag_name_detail": "_________________ §§______§§\r\n_____________ §§§§__§§§§§§\r\n__________ §§§§\r\n_________ §§\r\n________ §§\r\n_______ §§________$$$$$$$$$$$$$$$$\r\n_______§§§§ ______$$$$$$$$$$$$$$$$\r\n_____ ####### ____$$$$____$$$$\r\n_______#### ______ $$$$____$$$$\r\n_______#### ______ $$$$____$$$$\r\n___ $$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n___ $$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n_ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\r\n___ $$$$ #### $$$$$$$$$ #### $$$$\r\n___ $$ ##____## $$$$$ ##____##$$$$\r\n_____ ##____## _____ ##____ ##\r\n_______ #### _________ #### ──────██\r\n─────████\r\n────▄███\r\n────▀▀████\r\n──────▀▀████───────██\r\n────────▀▀████───────██\r\n──────────▀▀████───────██\r\n────────────▀▀████───────██\r\n──────────────▀▀████████───██\r\n────────────────▀█████████───██\r\n─────────────────████████████──██\r\n──────────────────████████████───██\r\n───────────────────███████████▄────██\r\n────────────────█──█████████───█─────██\r\n──────────────────█─▀██████────█───────██\r\n────────────────────█─▀█████───█\r\n──────────────────────█─▀████▄▀ \r\n────────────────────────█ \r\n──────────────────────────█",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 156,
+          "category": "Text Art",
+          "tag_name": "Stuff",
+          "tag_name_detail": "___________00_____________________7_______________\r\n________0000_____________________777______________\r\n______0000______________________77777_____________\r\n____00000______________________7777777____________\r\n___00000______________________777777777___________ \r\n__000000____________77777777777777777777777777777 \r\n_0000000______________7777777777777777777777777___ \r\n_0000000_______________7777777777777777777777_____ \r\n_0000__00_________________77777777777777777_______ \r\n_0000__00000000__________777777777_777777777______ \r\n_000000000000___________7777777_______7777777_____ \r\n__0000000000___________77777_____________77777____ \r\n___0000_000000________777___________________777___ \r\n____00000_______0___________0000__________________\r\n______000000__00000______000000___________________ \r\n________000000000000000000000_____________________ \r\n__________00000000000000000_______________________ \r\n______________000000000___________________________\r\n______________¶¶¶¶¶_______¶¶¶¶¶\r\n___________¶¶¶¶¶¶¶¶¶¶___¶¶¶¶¶¶¶¶¶¶\r\n__________¶¶¶¶¶___¶¶¶¶¶¶¶¶¶___¶¶¶¶¶\r\n__________¶¶¶¶¶___¶¶¶¶¶¶¶¶¶___¶¶¶¶¶\r\n___________¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶¶\r\n______________¶¶¶¶¶¶_____¶¶¶¶¶¶\r\n¶¶________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶\r\n¶¶¶¶______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶¶______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n¶¶¶_______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n____________________¶¶¶¶¶¶\r\n_____________________¶¶¶¶\r\n_____________________¶¶¶¶¶\r\n___________________¶¶¶¶¶¶¶¶\r\n__________________¶¶__¶¶__¶¶\r\n_________________¶¶___¶¶___¶¶\r\n_______________¶¶_____¶¶____¶¶\r\n░░░░░░░░░░░░░░░░░░░░░░███ \r\n░░░░░░░░░░░░░░░░░░░░███ \r\n░░░░░░░░░░░░░░░░░░░██ \r\n░░░░░░░░░░░░░░░░░░██ \r\n░░░░░░░░░░░░░░░░░███ \r\n░░░░░░░░█████████████████████ \r\n░░░░░███████████████████████████ \r\n░░░███████████████░███████████████ \r\n░██████████░██████░██████░█████████ \r\n░█████████░░░█████░█████░░░█████████ \r\n█████████░░░░░████░████░░░░░████████ \r\n████████░░░░░░░███░███░░░░░░░████████ \r\n██████████████████░██████████████████ \r\n█████████████████░░░█████████████████ \r\n████████░░░████████████████░░████████ \r\n░███████░░░░░░░░░░░░░░░░░░░░░███████ \r\n░░████████░░░░░░░░░░░░░░░░░████████ \r\n░░░██████████████████████████████ \r\n░░░░███████████████████████████\r\n__________________________________________________\r\n__________________________________________________\r\n_________________________¶¶¶¶_____________________\r\n_______________________¶¶¶¶¶¶¶¶___________________\r\n____________________¶¶¶¶¶¶¶¶¶¶¶¶__________________\r\n___________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________________\r\n________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____________\r\n_¶¶¶¶¶________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____¶¶¶___¶¶¶¶¶¶___\r\n__¶¶¶¶¶______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶_\r\n___¶¶¶¶¶____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____¶¶¶¶______¶¶¶\r\n____¶¶¶¶¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶_______¶¶¶\r\n____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶______¶¶¶\r\n____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶______¶¶¶\r\n_____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶_____¶¶¶_\r\n______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶____¶¶¶¶__\r\n_______¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶__¶¶¶¶____\r\n________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶______\r\n__________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_________\r\n______________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____________\r\n__________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________________\r\n__________________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________________\r\n__________¶____¶_________________________________\r\n__________¶¶__¶¶___¶_____________________________\r\n______¶¶__¶¶¶_¶¶__¶¶___¶¶________________________\r\n______¶¶¶¶_¶¶¶¶¶¶¶¶¶_¶¶¶_________________________\r\n___¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__________________________\r\n___¶¶¶¶¶¶¶_________¶¶¶¶¶¶¶¶¶¶____________________\r\n_____¶¶¶¶_______¶¶¶¶¶¶¶__¶¶¶¶¶¶¶_________________\r\n_¶¶¶¶¶¶¶_______¶¶¶____________¶¶¶________________\r\n__¶¶¶¶¶¶______¶¶________________¶¶¶¶¶¶___________\r\n_____¶¶______¶¶__________________¶¶¶¶¶¶¶_________\r\n_¶¶¶¶¶¶______¶¶_______________________¶¶¶________\r\n_¶¶¶¶¶¶¶__¶¶¶¶_________________________¶¶________\r\n_____¶¶¶¶¶¶¶¶¶_________________________¶¶________\r\n___¶¶¶¶¶_______________________________¶¶¶¶______\r\n__¶¶¶¶___________________________________¶¶¶¶____\r\n___¶¶_______________________________________¶¶___\r\n___¶________________________________________¶¶___\r\n__¶¶_________________________________________¶¶__\r\n___¶¶_______________________________________¶¶___\r\n___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___\r\n_____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_____\r\n_________________________________________________",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 157,
+          "category": "Text Art",
+          "tag_name": "music",
+          "tag_name_detail": "____________.♥.\r\n____________.♥♫♥.____________.♥. *\r\n____________.♥♫♥♫.______-.♥♫♥. * \r\n____________.♥♫♥♫♥._-.♥♫♥♫. * \r\n_____________.♥♫♥♫♥♫♥♫♥♫♥. *\r\n______-.♥♫♥♫♥♫♥♫♥♫♥♫♥. *\r\n_.♥♫♥♫♥♫♥♥♫♥♫♥♫♥♥♫♥♫♥. * . * \r\n______-.♥♫♥♫♥♫♥♫♥♫♥♫♥. * . * . * ..\r\n___________.♥♫♥♫♥♫♥♫♥♫♥. * . * . * ..\r\n____________.♥♫♥♫♥._-.♫♥♫♥. * . *. * . * ..\r\n____________.♫♥♫♥.______-.♥♫♥. * .* ..\r\n____________.♥♫♥.____________.♥. * . *.\r\n_____________.♥ ________________________________________¶____\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________________________¶___\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__________________¶¶____¶¶__\r\n_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____________¶¶______¶¶____¶¶_\r\n_____¶¶¶¶¶¶¶______________¶¶¶¶_______¶_____¶¶\r\n_____¶¶¶¶¶¶¶________¶¶¶¶_¶¶¶¶¶__¶____¶¶____¶¶\r\n_____¶¶¶¶¶¶¶_______¶¶¶¶¶_¶¶¶¶¶___¶___¶¶____¶¶\r\n_____¶¶¶¶¶¶¶_______¶¶¶¶¶_¶¶¶¶¶___¶¶__¶¶____¶¶\r\n_____¶¶¶¶¶¶¶_______¶¶¶¶¶_¶¶¶¶¶___¶¶__¶¶____¶¶\r\n_____¶¶¶¶¶¶¶_______¶¶¶¶¶_¶¶¶¶¶___¶¶__¶¶____¶¶\r\n_____¶¶¶¶¶¶¶_______¶¶¶¶¶_¶¶¶¶¶__¶¶___¶¶____¶¶\r\n_____¶¶¶¶¶¶¶_________¶¶¶_¶¶¶¶¶__¶____¶¶____¶¶\r\n_____¶¶¶¶¶¶¶______________¶¶¶¶_______¶_____¶¶\r\n_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶____________¶¶______¶_____¶¶_\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__________________¶_____¶¶__\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶________________________¶___\r\n________________________________________¶____\r\n_____________________________________________\r\n¶¶¶¶¶__¶¶¶¶¶_¶¶¶¶_¶¶¶¶__¶¶¶¶¶¶_¶¶¶¶¶¶__¶¶¶¶¶_\r\n_¶¶¶¶__¶¶¶¶___¶¶___¶¶__¶¶¶_______¶¶___¶¶___¶¶\r\n_¶¶_¶¶¶¶_¶¶___¶¶___¶¶___¶¶¶¶¶¶___¶¶___¶¶_____\r\n_¶¶__¶¶__¶¶___¶¶___¶¶_______¶¶¶__¶¶___¶¶___¶¶\r\n_¶¶__¶¶__¶¶___¶¶¶_¶¶¶__¶¶¶__¶¶¶__¶¶___¶¶¶__¶¶\r\n¶¶¶¶_¶¶_¶¶¶¶___¶¶¶¶¶___¶¶¶¶¶¶¶_¶¶¶¶¶¶__¶¶¶¶¶_\r\n_¶¶¶¶_________________________¶¶\r\n__¶¶¶¶¶_______________________¶¶\r\n__¶¶__¶¶_____________________¶¶¶¶\r\n___¶¶__¶¶____________________¶¶¶¶¶\r\n____¶¶_¶¶¶___________________¶¶__¶¶\r\n____¶¶_¶¶¶___________________¶¶__¶¶\r\n_____¶¶¶¶¶___________________¶¶_¶¶¶\r\n_____¶¶¶¶______________¶¶¶¶ ¶¶__¶¶\r\n____¶¶¶¶_____________¶¶¶¶¶¶¶¶¶_¶¶\r\n___¶¶¶_¶¶__¶¶¶_______¶¶¶¶¶¶¶¶\r\n__¶¶¶___¶¶¶¶¶¶¶¶¶_____¶¶¶¶¶¶\r\n_¶¶¶¶__¶¶¶¶___¶¶¶¶_______________________¶¶¶\r\n_¶¶¶__¶¶¶¶_¶¶¶__¶¶¶__________________¶¶¶¶¶¶\r\n¶¶¶¶__¶¶¶¶¶¶¶¶¶__¶¶¶______________¶¶¶¶¶¶¶¶¶\r\n_¶¶¶__¶¶¶_¶¶__¶__¶¶¶___________¶¶¶¶¶¶¶___¶¶\r\n_¶¶¶¶__¶¶¶¶¶¶¶¶__¶¶________¶¶¶¶¶¶¶¶______¶¶\r\n__¶¶¶¶____¶¶¶__¶¶¶______¶¶¶¶¶¶¶¶¶¶_______¶¶\r\n___¶¶¶¶¶¶___¶¶¶¶¶_____¶¶¶¶¶¶¶¶___¶¶_______¶¶\r\n_____¶¶¶¶¶¶¶¶¶¶________¶¶¶¶¶_____¶¶___¶¶¶¶¶¶\r\n________¶¶¶_¶¶¶________¶¶________¶¶__¶¶¶¶¶¶¶\r\n_______¶¶¶¶¶_¶¶_______¶¶¶_____¶¶¶¶___¶¶¶¶¶\r\n_______¶¶¶___¶¶_________¶¶___¶¶¶¶¶¶\r\n_________¶¶¶¶¶__________¶¶___¶¶¶¶¶¶\r\n_________________________¶¶__¶¶¶¶\r\n_____________________¶¶¶¶¶¶\r\n____________________¶¶¶¶¶¶¶\r\n____________________¶¶¶¶¶¶\r\n─────────────────────────────────█──────\r\n───███████████████████████████████████──\r\n──███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████████─\r\n──██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████▓▓██▒▒▒▒██\r\n──█▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████▓▓▓▓▓██▒▒▒▒██\r\n─██▒▒▒▒▒▒▒▒▒▒▒▒████▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒██\r\n─██▒▒▒▒██▒▒▒██▒██▓▓▓▓▓▓▓▓▓▓▓▓▓███▒▒▒▒▒█─\r\n─██▒▒▒▒███▒███▒▒██▓▓▓▓▓▓▓▓▓▓████▒▒▒▒▒██─\r\n─██▒▒▒▒▒█████▒▒▒██▓▓██████████▒▒▒▒▒▒▒██─\r\n─██▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓███▒▒▒▒▒▒▒▒▒▒▒▒▒▒██─\r\n─██▒██▒██████▒▒▒▒███▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒██─\r\n─██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒██─\r\n─██▒▒▒▒█▒█████▒▒▒▒▒██▓▓██▒▒▒▒▒▒▒▒▒▒▒▒██─\r\n─██▒▒▒▒███▒▒██▒▒▒▒▒▒██▓███▒▒▒▒▒▒▒▒▒▒███─\r\n─██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓███▒▒▒▒▒▒▒▒▒██──\r\n─██▒▒▒▒███████▒▒▒▒▒▒▒███▓██▒▒▒▒▒▒▒▒▒██──\r\n─██▒▒▒▒▒▒▒▒▒██▒▒▒▒▒▒▒▒██▓▓██▒▒▒▒▒▒▒▒██──\r\n─██▒▒▒▒███████▒▒▒▒▒▒▒▒▒██▓▓██▒▒▒▒▒▒▒██──\r\n─██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████▓▓███▒▒▒▒▒▒██──\r\n─██▒▒▒▒███████▒▒▒███▓▓▓▓▓▓▓▓███▒▒▒▒▒██──\r\n─██▒▒▒▒██▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒██──\r\n─██▒▒▒▒██████▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒██──\r\n─██▒▒▒▒██▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒██──\r\n─██▒▒▒▒██████▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒██──\r\n─██▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒██──\r\n──██▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓███▒▒▒▒██──\r\n───██▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓████▒▒▒▒▒▒██──\r\n────█████████████████████████▒▒██████─── \r\n───────--──████████████████████████─────\r\n____________#####\r\n_____________####\r\n_____________###\r\n_____________###\r\n_____________###\r\n_____________###\r\n_____________###\r\n_____________###\r\n_____________###__##\r\n_____________###__#__#\r\n_____________###___#__#\r\n_____________###___#___#\r\n_____________###___#____#\r\n_______##____###__#____#\r\n______#__#__######____#\r\n______#___##_____#____###\r\n_______#____#####____##\r\n________#___________####\r\n_________#_________###\r\n_________##_______###\r\n________##_________###\r\n_______##___________###\r\n______##______##_____##\r\n_____##_____#_____#___##\r\n_____##______####_____##\r\n_____###________________##\r\n______##_______________###\r\n_______###____________###\r\n_________####________###\r\n___________#########\r\n___________$$$$$$___________ \r\n___________$$$$$$___________ \r\n____________$$$$____________ \r\n____________$$$$____________ \r\n____________$$$$____________ \r\n____________$$$$____________ \r\n____________$$$$____________ \r\n____________$$$$____________ \r\n___________$$$$$$___________ \r\n___________$$$$$$___________ \r\n___________$$$$$$___________ \r\n__________$$$$$$$$__________ \r\n__________$$$$$$$$__________ \r\n_____$$$$$$$$$$$$$$$$$$_____ \r\n____$_____$$$$$$$$_____$____ \r\n___$______$$$$$$$$______$___ \r\n___$____________________$___ \r\n____$__________________$____ \r\n_____$______$$$$______$_____ \r\n_____$____$$____$$____$_____ \r\n____$_____$$____$$_____$____ \r\n___$________$$$$________$___ \r\n__$______________________$__ \r\n_$________________________$_ \r\n_$________________________$_ \r\n_$______$$$$$$$$$$$$______$_ \r\n__$______________________$__ \r\n___$____________________$___ \r\n____$$$$____________$$$$____ \r\n________$$$$$$$$$$$$________",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 158,
+          "category": "Text Art",
+          "tag_name": "Love",
+          "tag_name_detail": "────(♥)(♥)(♥)────(♥)(♥)(♥) __ ɪƒ ƴσυ'ʀє αʟσηє,\r\n──(♥)██████(♥)(♥)██████(♥) ɪ'ʟʟ ɓє ƴσυʀ ѕɧα∂σѡ.\r\n─(♥)████████(♥)████████(♥) ɪƒ ƴσυ ѡαηт тσ cʀƴ,\r\n─(♥)██████████████████(♥) ɪ'ʟʟ ɓє ƴσυʀ ѕɧσυʟ∂єʀ.\r\n──(♥)████████████████(♥) ɪƒ ƴσυ ѡαηт α ɧυɢ,\r\n────(♥)████████████(♥) __ ɪ'ʟʟ ɓє ƴσυʀ ρɪʟʟσѡ.\r\n──────(♥)████████(♥) ɪƒ ƴσυ ηєє∂ тσ ɓє ɧαρρƴ,\r\n────────(♥)████(♥) __ ɪ'ʟʟ ɓє ƴσυʀ ѕɱɪʟє.\r\n─────────(♥)██(♥) ɓυт αηƴтɪɱє ƴσυ ηєє∂ α ƒʀɪєη∂,\r\n───────────(♥) __ ɪ'ʟʟ ʝυѕт ɓє ɱє.\r\n´´´´¶¶¶¶¶¶´´´´´´¶¶¶¶¶¶\r\n´´¶¶¶¶¶¶¶¶¶¶´´¶¶¶¶¶¶¶¶¶¶\r\n´¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´¶¶¶¶¶\r\n¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ ´¶¶¶¶¶´\r\n´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n´´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n´´´´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n´´´´´´´´´¶¶¶¶¶¶¶¶\r\n´´´´´´´´´´´¶¶¶¶\r\n───▄▄▄▄▄▄─────▄▄▄▄▄▄\r\n─▄█▓▓▓▓▓▓█▄─▄█▓▓▓▓▓▓█▄\r\n▐█▓▓▒▒▒▒▒▓▓█▓▓▒▒▒▒▒▓▓█▌\r\n█▓▓▒▒░╔╗╔═╦═╦═╦═╗░▒▒▓▓█\r\n█▓▓▒▒░║╠╣╬╠╗║╔╣╩╣░▒▒▓▓█\r\n▐█▓▓▒▒╚═╩═╝╚═╝╚═╝▒▒▓▓█▌\r\n─▀█▓▓▒▒░░░░░░░░░▒▒▓▓█▀\r\n───▀█▓▓▒▒░░░░░▒▒▓▓█▀\r\n─────▀█▓▓▒▒░▒▒▓▓█▀\r\n──────▀█▓▓▒▓▓█▀\r\n────────▀█▓█▀\r\n──────────▀ ___d88888888b_____d88888888b\r\n__d88?____d88b___d88b____`88b\r\n_d8?_________d888b_________`8b\r\n_8b_________________________d8\r\n_b8__________________d8888b___d8888b\r\n__d8________________d8?__d8b_d8b__`8b\r\n___8ba_____________d8?_____d8b_____`8b\r\n____`8da___________8b_______________d8\r\n______`Y8b__________d8_____________8b\r\n________`8b__________8ba_________ad8\r\n__________`88_____88__`8da_____ab8?\r\n____________8b___d8_____`Y8___8Y?\r\n_____________`b_d?________`8_8?\r\n______________`8?__________`8?\r\n_______________\"____________\"",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Food ",
+      "status": null,
+      "hashtag": [
+
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Art/Photography ",
+      "status": null,
+      "hashtag": [
+
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Electronics ",
+      "status": null,
+      "hashtag": [
+
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Mood ",
+      "status": null,
+      "hashtag": [
+
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Other ",
+      "status": null,
+      "hashtag": [
+
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Eid",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 192,
+          "category": "Eid",
+          "tag_name": "Eid",
+          "tag_name_detail": "#EidAdha #EidulAdha #EidAlAdha #EidMubarak #HappyEid #Eidi #Happy_Eid #LikesWIthTags #EidSelfie #Islam #Muslim #Muslims #BakraEid #InstaEid #EidDay #EidOutfit #HappyEidMubarak #EidHoliday #EidParty #Family #Joyful #Celebration #Islamic #EidAlFitr  #Ramadan #RamadanMubarak #Fasting #Pray #Prayers #Quran #HolyMonth #Salat #Namaz",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Sports",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 193,
+          "category": "Sports",
+          "tag_name": "fitness",
+          "tag_name_detail": "#crowd #LikesWithTags #score #sports #fitness #gym #train #health #sportsbrav #winner #trainers #best #trainstation",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 194,
+          "category": "Sports",
+          "tag_name": "basketball",
+          "tag_name_detail": "#workout #healthy #healthyliving #healthyeating #healthyfood #healthylifestyle #fitnessmodel #fit #fitnessaddict #fitspo #bodybuilding #cardio #photooftheday #instahealth #healthychoices #strong #motivation #instagood #determination #lifestyle #diet #getfit #cleaneating #eatclean #exercise #gymlife #gymfreak #gymtime #gymrat #gymmotivation #fitfam #progress #muscle #gymaddict #hulk #body #instadaily #musclegain #run #runner #running #runtoinspire #furtherfasterstronger #seenonmyrun #trailrunning #trailrunner #runchat #runhappy #time2run #instafit #happyrunner #marathon #runners #trailrun #instarunner #instarun #workouttime #swimming #LikesWithtags #swim #water #swimmingpool #swimmer #watersport #watersports #pool #wet #sport #swimsuit #fast #fun #relaxing #floating #swimmers #blue #chlorine #yogapose #technique #parsvabakasana #yogafit #instayoga #yogaplay #photobomb #ekapadakoundinyasana #yogapractice #yogalove #yogachallenge #yogagram #yogastretch #lowbackstrength #sidecrow #practiceandalliscoming #bendyyogisflow #yogaforlovers #yogaaddict #yogini #yogahigh #ilove #igyogafam #igyoga #breaststroke #yogalife #inspiredyogis #butterfly #yogagirl #basketball #basket #ball #net #slamdunk #orange #bounce #throw #court #board #nba #jump #jumping #tall #dunk #bball #team #player #basketballneverstops #hoop #soccer #football #pitch #goal #kick #kicking #game #fan #fans #club #play #playing #footballgame #footballplayer #grass #green #cheer #cheerleading #cheerleader #cheerathletics #stunt #stunting #tumbling #toetouch #flexible #box #stretch #scale #scorpion #backtuck #instacheer",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 195,
+          "category": "Sports",
+          "tag_name": "Love players",
+          "tag_name_detail": "#somuchfun #training #loveit #traintracks #justdoit #active #excercise #instasport #sportscar #sporty",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Instagram",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 196,
+          "category": "Instagram",
+          "tag_name": "Insta love1",
+          "tag_name_detail": "#instagram #instagrammers #LikesWithTags #igers #instalove #instamood #instagood #followme #follow #comment #shoutout #photography #iphoneography #androidography #filter #filters #hipster #contests #photo #ig #igaddict #photooftheday #insta #picoftheday #bestoftheday #instadaily #instafamous #popularpage #popular #instagramdirect #instadirect #TheHustlerTeam",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 197,
+          "category": "Instagram",
+          "tag_name": "Insta Love2",
+          "tag_name_detail": "#directmessage #direct #message #messageme #instadirectme #instagram #instagrammers #LikesWithTags ",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Tiktok",
+      "status": null,
+      "hashtag": [
+        {
+          "id": 198,
+          "category": "Tiktok",
+          "tag_name": "Tiktok 1",
+          "tag_name_detail": "#tiktok #toky #follow #f4f #followme #TFLers #followforfollow #follow4follow #teamfollowback #followher #followbackteam #followhim #followall #followalways #followback #me #love #pleasefollow #follows #follower #following",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        },
+        {
+          "id": 199,
+          "category": "Tiktok",
+          "tag_name": "Tiktok 2",
+          "tag_name_detail": "#Tik  #like4like #TFLers #liker #likes #l4l #likes4likes #photooftheday #love #likeforlike #likesforlikes #liketeam #likeback #likebackteam #instagood #likeall #likealways #liking #liked",
+          "created_at": null,
+          "updated_at": null,
+          "deleted_at": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "status": true,
+  "message": "submitted",
+  "content": [
+    {
+      "name": "ChatStyle Whats Tool",
+      "button_text": "Let's Start",
+      "description": "Whatsapp statuses can be saved with WhatsTool 2023 whatsapp apk tool, which is one of its standout features"
+    },
+    {
+      "name": "Story Saver",
+      "button_text": "Start",
+      "description": "This feature will allow you to save stories that you see everyday and re-share them as your own."
+    },
+    {
+      "name": "Profile Photo Maker for WhatsApp",
+      "button_text": "Create Profile Picture",
+      "description": "You can also create a good-looking profile DP for your WhatsApp using the Profile Photo Make."
+    },
+    {
+      "name": "Direct Chat",
+      "button_text": "Continue",
+      "description": "By using this feature, you can chat with anyone on Whatsapp without saving their number."
+    },
+    {
+      "name": "Speech to text",
+      "button_text": "Go to ChatStyle Tools",
+      "description": "Using the Voice to Text Converter is simple: it allows you to dictate or recognize text in all languages, send it as an SMS, or copy and paste it into other apps on your device."
+    },
+    {
+      "name": "Text art",
+      "button_text": "Next",
+      "description": "Using Chat Styles, you can write text with cool fonts and send it on WhatsApp, Messenger, or any other social network. You can chat with your friends using special characters, which are very cool and beautiful."
+    }
+  ]
+}
