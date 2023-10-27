@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.app.videodownloaderapp.Models.HashTagModel;
+import com.app.videodownloaderapp.Models.Category;
 import com.app.videodownloaderapp.R;
 import com.bumptech.glide.Glide;
 
@@ -18,10 +18,10 @@ import java.util.ArrayList;
 
 public class HashTagAdapter extends RecyclerView.Adapter<HashTagAdapter.MyViewHolder> {
     private final Context context;
-    private final ArrayList<com.app.videodownloaderapp.Models.HashTagModel> HashTagModel;
+    private final ArrayList<Category> HashTagModel;
     private final getHashTagModel tagModel;
 
-    public HashTagAdapter(Context context, ArrayList<HashTagModel> HashTagModel, getHashTagModel tagModel) {
+    public HashTagAdapter(Context context, ArrayList<Category> HashTagModel, getHashTagModel tagModel) {
         this.context = context;
         this.HashTagModel = HashTagModel;
         this.tagModel = tagModel;
@@ -29,19 +29,19 @@ public class HashTagAdapter extends RecyclerView.Adapter<HashTagAdapter.MyViewHo
 
     @NonNull
     @Override
-    public HashTagAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_hashtag, parent, false));
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(context).inflate(R.layout.layout_hashtag, parent, false);
+        return new MyViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull HashTagAdapter.MyViewHolder holder, int position) {
         holder.TvHashtagName.setText(HashTagModel.get(position).getName().replace(" / ", " ").replace("/", " "));
         holder.TvHashtagName.setSelected(true);
-        Glide.with(context)
-                .load(Integer.valueOf(context.getResources().getIdentifier("ic_" +
-                                HashTagModel.get(position).getName().toLowerCase().trim().replace(" / ", "/")
-                                        .replace("/", "_").replace(" ", "_") + "_new", "drawable",
-                        context.getPackageName()))).into(holder.IvHashTagImg);
+        Glide.with(context).load(Integer.valueOf(context.getResources().getIdentifier("ic_" +
+                        HashTagModel.get(position).getName().toLowerCase().trim().replace(" / ", "/")
+                                .replace("/", "_").replace(" ", "_") + "_new", "drawable",
+                context.getPackageName()))).into(holder.IvHashTagImg);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +57,7 @@ public class HashTagAdapter extends RecyclerView.Adapter<HashTagAdapter.MyViewHo
     }
 
     public interface getHashTagModel {
-        void SetClickHashTag(int position, HashTagModel hashTagModel);
+        void SetClickHashTag(int position, Category hashTagModel);
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

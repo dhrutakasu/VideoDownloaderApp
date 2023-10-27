@@ -2,6 +2,7 @@ package com.app.videodownloaderapp.Ui.Activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -12,8 +13,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.videodownloaderapp.Const.Constants;
-import com.app.videodownloaderapp.Models.DataItem;
-import com.app.videodownloaderapp.Models.HashTagModel;
+import com.app.videodownloaderapp.Models.Category;
+import com.app.videodownloaderapp.Models.Hashtag;
+import com.app.videodownloaderapp.Models.HashtagResponseData;
 import com.app.videodownloaderapp.R;
 import com.app.videodownloaderapp.Ui.Adapters.HashTagAdapter;
 import com.google.gson.Gson;
@@ -21,6 +23,7 @@ import com.google.gson.Gson;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
 
 public class HashtagActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -56,43 +59,60 @@ public class HashtagActivity extends AppCompatActivity implements View.OnClickLi
     private void VideoInitActions() {
         IvBack.setVisibility(View.VISIBLE);
         IvNotFound.setVisibility(View.GONE);
-        GetHashTagList();
-        RvHashTag.setLayoutManager(new GridLayoutManager(context, 3));
-        if (hashtagModelArrayList.size() > 0) {
-            RvHashTag.setVisibility(View.VISIBLE);
-            IvNotFound.setVisibility(View.GONE);
-        } else {
-            RvHashTag.setVisibility(View.GONE);
-            IvNotFound.setVisibility(View.VISIBLE);
-        }
-        HashTagAdapter hashTagAdapter = new HashTagAdapter(context, hashtagModelArrayList, (position, hashTagModel) -> {
-            Intent intent = new Intent(context, HashtagCategoriesActivity.class);
-            intent.putExtra(Constants.HashCategoryId, hashTagModel.getId());
-            intent.putExtra(Constants.HashCategoryName, hashTagModel.getName());
-            intent.putExtra(Constants.HashCategoryData, new Gson().toJson((Object) hashTagModel.getHashtag()));
-            startActivity(intent);
-        });
-        RvHashTag.setAdapter(hashTagAdapter);
+        TvTitle.setText("Hashtag");
+        new HashTagAsynkTask().execute();
     }
 
-    private void GetHashTagList() {
-        try {
-            InputStream inputStream = getAssets().open("hashtags.json");
-            byte[] bytes = new byte[inputStream.available()];
-            inputStream.read(bytes);
-            inputStream.close();
-            HashTagStr = new String(bytes, "UTF-8");
-        } catch (IOException e) {
-            e.printStackTrace();
-            HashTagStr = null;
+    public class HashTagAsynkTask extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            hashtagModelArrayList = new ArrayList();
         }
-        ArrayList<HashTagModel> tagModels = (ArrayList) new Gson().fromJson(HashTagStr, HashTagModel.class).getData();
-        hashtagModelArrayList = new ArrayList();
-        for (int i = 0; i < tagModels.size(); i++) {
-            DataItem data = tagModels.get(i);
-            if (data.getHashtag().size() > 0) {
-                hashtagModelArrayList.add(tagModels.get(i));
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            try {
+                InputStream inputStream = getAssets().open("hashtags.json");
+                byte[] bytes = new byte[inputStream.available()];
+                inputStream.read(bytes);
+                inputStream.close();
+                HashTagStr = new String(bytes, "UTF-8");
+
+                Gson gson = new Gson();
+                HashtagResponseData responseData = gson.fromJson(HashTagStr, HashtagResponseData.class);
+                List<Category> categories = responseData.getData();
+                for (int i = 0; i < categories.size(); i++) {
+                    if (categories.get(i).getHashtag().size() > 0) {
+                        hashtagModelArrayList.add(categories.get(i));
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+                HashTagStr = null;
             }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void unused) {
+            super.onPostExecute(unused);
+            RvHashTag.setLayoutManager(new GridLayoutManager(context, 4));
+            if (hashtagModelArrayList.size() > 0) {
+                RvHashTag.setVisibility(View.VISIBLE);
+                IvNotFound.setVisibility(View.GONE);
+            } else {
+                RvHashTag.setVisibility(View.GONE);
+                IvNotFound.setVisibility(View.VISIBLE);
+            }
+            HashTagAdapter hashTagAdapter = new HashTagAdapter(context, hashtagModelArrayList, (position, hashTagModel) -> {
+                Intent intent = new Intent(context, HashtagCategoriesActivity.class);
+                intent.putExtra(Constants.HashCategoryId, hashTagModel.getId());
+                intent.putExtra(Constants.HashCategoryName, hashTagModel.getName());
+                intent.putExtra(Constants.HashCategoryData, new Gson().toJson(hashTagModel.getHashtag()));
+                startActivity(intent);
+            });
+            RvHashTag.setAdapter(hashTagAdapter);
         }
     }
 
