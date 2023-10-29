@@ -80,7 +80,6 @@ public class InstagramActivity extends AppCompatActivity implements View.OnClick
         changeTabSelectedColor(LLInstagram);
     }
 
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

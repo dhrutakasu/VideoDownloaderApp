@@ -84,10 +84,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(context, HashtagActivity.class));
                 break;
             case R.id.CardCaption:
+                startActivity(new Intent(context, CaptionActivity.class));
                 break;
             case R.id.CardQuotes:
+                startActivity(new Intent(context, QuoteActivity.class));
                 break;
             case R.id.CardDpMaker:
+                startActivity(new Intent(context, DPMakerActivity.class));
                 break;
             case R.id.CardStory:
                 break;

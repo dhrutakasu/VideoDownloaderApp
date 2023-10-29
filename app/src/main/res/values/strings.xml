@@ -68,4 +68,39 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="enter_url">Enter Url</string>
+    <string name="enter_instagram_url">Enter Instagram Url</string>
+    <string name="toast_stroy_highligth_notsupported">story highlight not supported right now..coming soon</string>
+    <string name="no_internet_message">Internet is not enabled. Do you want to go to settings menu?</string>
+    <string name="alert">Alert</string>
+    <string name="alert_exit_yes">Yes</string>
+    <string name="alert_exit_no">No</string>
+    <string name="open_story_highligth">open storysaver to download story or highlights</string>
+    <string name="download_started">Download Started</string>
+    <string name="downloaded_15mb">downloaded: 15mb</string>
+    <string name="pending">pending</string>
+    <string name="downloaded">"downloaded "</string>
+    <string name="running">running</string>
+    <string name="network_error">Network error</string>
+    <string name="slow_internet_connection">Oops. Slow internet connection</string>
+    <string name="recent_download">Recent downloads</string>
+    <string name="copy_tag">Copy Tag</string>
+    <string name="captions_massage">Captions are the brief text that describes or explains what is happening in a picture in a book, magazine, or newspaper</string>
+    <string name="popular">Popular</string>
+    <string name="_24_status">24 Status</string>
+    <string name="toast_instagram_not_found">Sorry, Instagram Apps Not Found</string>
+    <string name="toast_copied_to_clipboard">Copied to Clipboard!</string>
+    <string name="facebook_already_installed">facebook app already installed</string>
+    <string name="facebook_not_installing">facebook app not installing</string>
+    <string name="toast_twitter_not_installing">twitter app not installing</string>
+    <string name="toast_whatsapp_not_installed">Whatsapp have not been installed.</string>
+    <string name="quotes_caption">Quotes that provide wisdom and inspire us to be our best selves are the best. You\'ll be motivated to keep going when you read these words.</string>
+    <string name="text_copied_successfully">Text copied successfully</string>
+    <string name="border">Border</string>
+    <string name="flip">Flip</string>
+    <string name="rotate">Rotate</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="degree">Degree</string>
+    <string name="animal">Animal</string>
 </resources>

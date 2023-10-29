@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.videodownloaderapp.Const.Constants;
 import com.app.videodownloaderapp.Models.Category;
-import com.app.videodownloaderapp.Models.Hashtag;
 import com.app.videodownloaderapp.Models.HashtagResponseData;
 import com.app.videodownloaderapp.R;
 import com.app.videodownloaderapp.Ui.Adapters.HashTagAdapter;
@@ -73,7 +72,7 @@ public class HashtagActivity extends AppCompatActivity implements View.OnClickLi
         @Override
         protected Void doInBackground(Void... voids) {
             try {
-                InputStream inputStream = getAssets().open("hashtags.json");
+                InputStream inputStream = getAssets().open("DataHashtag.json");
                 byte[] bytes = new byte[inputStream.available()];
                 inputStream.read(bytes);
                 inputStream.close();
