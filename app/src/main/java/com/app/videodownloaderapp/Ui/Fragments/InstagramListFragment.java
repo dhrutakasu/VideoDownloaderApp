@@ -29,17 +29,25 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.GET;
+import retrofit2.http.Path;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Network;
 import com.android.volley.NetworkError;
 import com.android.volley.ParseError;
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.ServerError;
 import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.app.videodownloaderapp.Const.Constants;
 import com.app.videodownloaderapp.Models.VideoDownloaderDownloadModel;
@@ -52,8 +60,11 @@ import com.app.videodownloaderapp.Util.PrivateFinalUrlList;
 import com.app.videodownloaderapp.Util.PublicFinalUrlList;
 import com.github.ybq.android.spinkit.SpinKitView;
 import com.github.ybq.android.spinkit.style.FadingCircle;
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
@@ -92,7 +103,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
     private String username;
     private String picUrl;
     private String profileUrl;
-    private ArrayList<VideoDownloaderDownloadModel> downloadModels = new ArrayList();
+    private final ArrayList<VideoDownloaderDownloadModel> downloadModels = new ArrayList();
     private VideoDownloaderDownloadAdapter downloadAdapter;
     private int allComplete = 0;
     public String cookie = "null";
@@ -111,20 +122,20 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
 
     private void VideoInitViews() {
         context = getContext();
-        EdtUrl = (EditText) view.findViewById(R.id.EdtUrl);
-        IvClear = (ImageView) view.findViewById(R.id.IvClear);
-        CardPaste = (CardView) view.findViewById(R.id.CardPaste);
-        ConsDownload = (CardView) view.findViewById(R.id.ConsDownload);
-        RvDownLoaded = (RecyclerView) view.findViewById(R.id.RvDownLoaded);
-        TvDownloadViewTitle = (TextView) view.findViewById(R.id.TvDownloadViewTitle);
-        LlDownload = (LinearLayout) view.findViewById(R.id.LlDownload);
-        RlDownloadView = (RelativeLayout) view.findViewById(R.id.RlDownloadView);
-        TvSeeAllYourDownload = (TextView) view.findViewById(R.id.TvSeeAllYourDownload);
-        RvYOurDownload = (RecyclerView) view.findViewById(R.id.RvYOurDownload);
-        IvNotFound = (ImageView) view.findViewById(R.id.IvNotFound);
-        ConsProgressKit = (ConstraintLayout) view.findViewById(R.id.ConsProgressKit);
-        ProgressKit = (SpinKitView) view.findViewById(R.id.ProgressKit);
-        TvMsg = (TextView) view.findViewById(R.id.TvMsg);
+        EdtUrl = view.findViewById(R.id.EdtUrl);
+        IvClear = view.findViewById(R.id.IvClear);
+        CardPaste = view.findViewById(R.id.CardPaste);
+        ConsDownload = view.findViewById(R.id.ConsDownload);
+        RvDownLoaded = view.findViewById(R.id.RvDownLoaded);
+        TvDownloadViewTitle = view.findViewById(R.id.TvDownloadViewTitle);
+        LlDownload = view.findViewById(R.id.LlDownload);
+        RlDownloadView = view.findViewById(R.id.RlDownloadView);
+        TvSeeAllYourDownload = view.findViewById(R.id.TvSeeAllYourDownload);
+        RvYOurDownload = view.findViewById(R.id.RvYOurDownload);
+        IvNotFound = view.findViewById(R.id.IvNotFound);
+        ConsProgressKit = view.findViewById(R.id.ConsProgressKit);
+        ProgressKit = view.findViewById(R.id.ProgressKit);
+        TvMsg = view.findViewById(R.id.TvMsg);
     }
 
     private void VideoInitListerns() {
@@ -136,7 +147,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
     private void VideoInitActions() {
         this.requestQueue = Volley.newRequestQueue(context);
         this.filename = new ArrayList<>();
-        this.cookie = getActivity().getSharedPreferences("cookie", 0).getString("flag", (String) null);
+        this.cookie = getActivity().getSharedPreferences("cookie", 0).getString("flag", null);
     }
 
     @Override
@@ -148,7 +159,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
             case R.id.IvClear:
                 GotoClear();
                 break;
-            case R.id.IvDownload:
+            case R.id.ConsDownload:
                 GotoDownload();
                 break;
         }
@@ -157,7 +168,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
     @Override
     public void onResume() {
         super.onResume();
-        this.cookie = getActivity().getSharedPreferences("cookie", 0).getString("instagram", (String) null);
+        this.cookie = getActivity().getSharedPreferences("cookie", 0).getString("instagram", null);
     }
 
     private void GotoPasteLink() {
@@ -190,8 +201,10 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
             String builder = str + m;
             str = builder;
         }
+        System.out.println("-------- - - - ssss str : " + str);
         inputUrl = str;
         MediaType mediaType = new MediaType(str);
+        System.out.println("-------- - - - ssss ValidLink : " + mediaType.isValidLink());
         if (mediaType.isValidLink().equals("notValid")) {
             ConsProgressKit.setVisibility(View.GONE);
             Toast.makeText(getActivity(), getResources().getString(R.string.enter_instagram_url), Toast.LENGTH_SHORT).show();
@@ -199,17 +212,98 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
             ConsProgressKit.setVisibility(View.GONE);
             Toast.makeText(getActivity(), getResources().getString(R.string.toast_stroy_highligth_notsupported), Toast.LENGTH_SHORT).show();
         } else if (mediaType.isValidLink().equals("post")) {
-            String m2 = inputUrl.split(Pattern.quote("?"))[0] + "?__a=1&__d=dis";
+            String m2 = inputUrl.split(Pattern.quote("?"))[0] + "?__a=1";
+//            String m2 = inputUrl.split(Pattern.quote("?"))[0] + "?__a=1&__d=dis";
             if (Constants.isInternetConnected(getActivity())) {
                 ConsDownload.setClickable(false);
                 inputUrl = EdtUrl.getText().toString().trim();
-                requestQueue.add(new JsonObjectRequest(0, m2, (JSONObject) null, obj -> {
-                    JSONObject jSONObject = (JSONObject) obj;
+                System.out.println("-------- - - - ssss m2: " + m2);
+               /* Gson gson = new GsonBuilder()
+                        .setLenient()
+                        .create();
+                Retrofit retrofit = new Retrofit.Builder()
+                        .baseUrl("https://www.instagram.com/")
+                        .addConverterFactory(GsonConverterFactory.create(gson))
+                        .build();
+
+                InstagramAPI instagramAPI = retrofit.create(InstagramAPI.class);
+
+                // Instagram shortcode (e.g., p/-vSJNUDKKD)
+                String shortcode = "p/-vSJNUDKKD";
+
+                // Make a request to get Instagram post data
+                Call<JsonObject> call = instagramAPI.getPostData(shortcode);
+                call.enqueue(new Callback<JsonObject>() {
+                    @Override
+                    public void onResponse(Call<JsonObject> call, retrofit2.Response<JsonObject> response) {
+                        Log.d("-TAG", "Image response: " + response.body());
+                        if (response.isSuccessful()) {
+                            JsonObject post = response.body();
+                            if (post != null) {
+                                String imageUrl = post.getAsJsonObject("graphql")
+                                        .getAsJsonObject("shortcode_media")
+                                        .get("display_url")
+                                        .getAsString();
+                                Log.d("-TAG", "Image URL: " + imageUrl);
+                            }
+                        } else {
+                            Log.e("-TAG", "Error: " + response.message());
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<JsonObject> call, Throwable t) {
+                        Log.e("-TAG", "Errors: " + t.getMessage());
+                    }
+                });*/
+
+                StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://www.instagram.com/javad_masoumi/?__a=1&__d=dis",
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+
+                                System.out.println("-------- - - - ssss response: " + response.toString());
+                                try {
+//                                    // Parse the JSON response
+                                    JSONObject jsonResponse = new JSONObject(response);
+//
+//                                    // Access the data you need, such as image download URLs
+//                                    String imageUrl = jsonResponse.getJSONObject("graphql")
+//                                            .getJSONObject("shortcode_media")
+//                                            .getString("display_url");
+//
+//                                    Log.d("TAG", "Image URL: " + imageUrl);
+//
+//                                    // Handle the image URL as needed
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+
+                                    System.out.println("-------- - - - ssss JSONException: " + e.getMessage());
+                                    Log.e("TAG", "Error parsing JSON response");
+                                }
+                            }
+                        },
+                        new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+                                Log.e("TAG", "Error: " + error.getMessage());
+
+                                System.out.println("-------- - - - ssss Error: " + error.getMessage());
+                            }
+                        });
+
+                // Add the request to the RequestQueue
+                requestQueue.add(stringRequest);
+
+
+               /* requestQueue.add(new JsonObjectRequest(Request.Method.GET, m2, null, obj -> {
+                    JSONObject jSONObject = obj;
+                    System.out.println("-------- - - - ssss obj: " + jSONObject.toString());
                     if (String.valueOf(jSONObject).contains("{\"title\":\"Restricted Video\",\"description\":\"You must be 18 years old or over to see this video\"}")) {
                         PrivateDataProcess(obj.toString());
                         return;
                     }
-                    PublicfinalJsonGet = (FinalJsonGet) new GsonBuilder().create().fromJson(String.valueOf(jSONObject), FinalJsonGet.class);
+                    PublicfinalJsonGet = new GsonBuilder().create().fromJson(String.valueOf(jSONObject), FinalJsonGet.class);
                     PublicFinalUrlList publicFinalUrlList = new PublicFinalUrlList(PublicfinalJsonGet);
                     list.clear();
                     list = publicFinalUrlList.getUrlList();
@@ -230,15 +324,18 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                     allComplete = 0;
                     Toast.makeText(getActivity(), getResources().getString(R.string.download_started), Toast.LENGTH_SHORT).show();
                     for (int i = 0; i < list.size(); i++) {
+                        System.out.println("-------- - - - ssss list: " + list.get(i));
                         String str1 = list.get(i);
                         if (Constants.access$2000(str1)) {
-                            new DownloadVideoAsyncTask(context).execute(new String[]{str1});
+                            new DownloadVideoAsyncTask(context).execute(str1);
                         } else {
-                            new DownloadImageAsyncTask(context).execute(new String[]{str1});
+                            new DownloadImageAsyncTask(context).execute(str1);
                         }
                     }
-                }, volleyError -> PrivateDataProcess(volleyError.toString())));
-                return;
+                }, volleyError -> {
+                    PrivateDataProcess(volleyError.getMessage());
+                }));*/
+//                return;
             }
             ConsProgressKit.setVisibility(View.GONE);
             Toast.makeText(getActivity(), getResources().getString(R.string.no_internet_message), Toast.LENGTH_SHORT).show();
@@ -247,19 +344,22 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
             Toast.makeText(getActivity(), getResources().getString(R.string.open_story_highligth), Toast.LENGTH_SHORT).show();
         }
     }
-
+    interface InstagramAPI {
+        @GET("{shortcode}/?__a=1")
+        Call<JsonObject> getPostData(@Path("shortcode") String shortcode);
+    }
     public final void PrivateDataProcess(String str) {
+        System.out.println("-------- - - - ssss : " + str);
         this.requestQueue.add(new JsonObjectRequest(str, new Response.Listener<JSONObject>() {
-            /* JADX WARNING: type inference failed for: r6v10, types: [java.util.List<com.basic.videodownloader.allmovie.model.VideoDownloaderDownloadModel>, java.util.ArrayList] */
             public void onResponse(JSONObject obj) {
-                JSONObject jSONObject = (JSONObject) obj;
+                JSONObject jSONObject = obj;
                 if (String.valueOf(jSONObject).contains("{\"title\":\"Restricted Video\",\"description\":\"You must be 18 years old or over to see this video\"}")) {
                     ConsProgressKit.setVisibility(View.GONE);
                     ConsDownload.setClickable(true);
 //                    loginDialog();
                     return;
                 }
-                PrivatefinalJsonGet = (FinalJsonPrivate) new GsonBuilder().create().fromJson(String.valueOf(jSONObject), FinalJsonPrivate.class);
+                PrivatefinalJsonGet = new GsonBuilder().create().fromJson(String.valueOf(jSONObject), FinalJsonPrivate.class);
                 PrivateFinalUrlList privateFinalUrlList = new PrivateFinalUrlList(PrivatefinalJsonGet);
                 list.clear();
                 list = privateFinalUrlList.getUrlList();
@@ -282,9 +382,9 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                 for (int i = 0; i < list.size(); i++) {
                     String str = list.get(i);
                     if (Constants.access$2000(str)) {
-                        new DownloadVideoAsyncTask(context).execute(new String[]{str});
+                        new DownloadVideoAsyncTask(context).execute(str);
                     } else {
-                        new DownloadImageAsyncTask(context).execute(new String[]{str});
+                        new DownloadImageAsyncTask(context).execute(str);
                     }
                 }
             }
@@ -328,7 +428,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
 
         public final String doInBackground(String[] objArr) {
             System.out.println("---------- DownloadImage : doInBackground ");
-            String[] strArr = (String[]) objArr;
+            String[] strArr = objArr;
             StringBuilder sb = new StringBuilder();
             sb.append(username);
             sb.append(System.currentTimeMillis());
@@ -359,7 +459,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                     this.fileOutputStream = fileOutputStream2;
                     Objects.requireNonNull(fileOutputStream2);
                 } else {
-                    File file = new File(Constants.RootImageDirectoryInsta);
+                    File file = new File(context.getFilesDir().toString());
                     if (!file.exists()) {
                         file.mkdirs();
                     }
@@ -372,8 +472,8 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                     int read = bufferedInputStream.read(bArr);
                     this.count = read;
                     if (read != -1) {
-                        j += (long) read;
-                        publishProgress(new String[]{"" + ((int) ((100 * j) / ((long) contentLength)))});
+                        j += read;
+                        publishProgress("" + ((int) ((100 * j) / ((long) contentLength))));
                         this.fileOutputStream.write(bArr, 0, this.count);
                     } else {
                         this.fileOutputStream.flush();
@@ -389,7 +489,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
         }
 
         public final void onPostExecute(String obj) {
-            super.onPostExecute((String) obj);
+            super.onPostExecute(obj);
             System.out.println("---------- DownloadImage : onPostExecute ");
          /*   addDowloadDataToDatabase(this.savedFileName, this.savedFilePath);
             if (allComplete == list.size() - 1) {
@@ -443,7 +543,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
     }
 
     public final void onProgressUpdate(String[] objArr) {
-        String[] strArr = (String[]) objArr;
+        String[] strArr = objArr;
         System.out.println("---------- DownloadImage : onProgressUpdate " + strArr[0]);
 //            super.onProgressUpdate(strArr);
 //            progressDownload.setProgress(Integer.parseInt(strArr[0]));
@@ -466,7 +566,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
 
         public final String doInBackground(String[] objArr) {
             System.out.println("---------- DownloadVideo : doInBackground ");
-            String[] strArr = (String[]) objArr;
+            String[] strArr = objArr;
             StringBuilder sb = new StringBuilder();
             sb.append(username);
             sb.append(System.currentTimeMillis());
@@ -511,8 +611,8 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                     int read = bufferedInputStream.read(bArr);
                     this.count = read;
                     if (read != -1) {
-                        j += (long) read;
-                        publishProgress(new String[]{"" + ((int) ((100 * j) / ((long) contentLength)))});
+                        j += read;
+                        publishProgress("" + ((int) ((100 * j) / ((long) contentLength))));
                         this.fileOutputStream.write(bArr, 0, this.count);
                     } else {
                         this.fileOutputStream.flush();
@@ -528,7 +628,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
         }
 
         public final void onPostExecute(String obj) {
-            super.onPostExecute((String) obj);
+            super.onPostExecute(obj);
             System.out.println("---------- DownloadVideo : onPostExecute ");
 //        addDowloadDataToDatabase(this.savedFileName, this.savedFilePath);
 //        if (allComplete == list.size() - 1) {
@@ -583,7 +683,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
         }
 
         public final void onProgressUpdate(String[] objArr) {
-            String[] strArr = (String[]) objArr;
+            String[] strArr = objArr;
             super.onProgressUpdate(strArr);
             System.out.println("---------- DownloadVideo : onProgressUpdate " + strArr[0]);
 //        progressDownload.setProgress(Integer.parseInt(strArr[0]));

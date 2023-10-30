@@ -63,4 +63,8 @@ dependencies {
 
     //todo volley dependency
     implementation 'com.github.yalantis:ucrop:2.2.6'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
 }
