@@ -14,4 +14,9 @@
     <color name="colorTransparent">#43000000</color>
     <color name="light_grey">#efeded</color>
     <color name="gray">#cfcfcf</color>
+    <color name="blue_facebook">#4e69aa</color>
+    <color name="downloadButtonRipple">#663e3e3e</color>
+    <color name="seeAll">#1b1b1b</color>
+    <color name="iconBackground">#fcfcfc</color>
+    <color name="twitter">#03add9</color>
 </resources>

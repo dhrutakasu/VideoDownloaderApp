@@ -4,4 +4,8 @@
     <style name="SwitchTheme">
         <item name="android:colorControlActivated">#ff0000</item>
     </style>
+
+    <style name="SwitchThemeFacebook">
+        <item name="android:colorControlActivated">#4e69aa</item>
+    </style>
 </resources>

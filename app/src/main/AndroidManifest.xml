@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
+        android:allowClearUserData="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -13,22 +13,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VideoDownloaderApp"
-        android:usesCleartextTraffic="true"
-        android:allowClearUserData="true">
+        android:usesCleartextTraffic="true">
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.DpMakerEditActivity"
+            android:name="com.app.videodownloaderapp.Ui.Activity.InstagramLoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.DPMakerActivity"
+            android:name=".Ui.Activity.TwitterActivity"
             android:exported="false" />
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.QuoteItemActivity"
+            android:name=".Ui.Activity.FacebookActivity"
             android:exported="false" />
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.QuoteActivity"
+            android:name=".TestActivity"
             android:exported="false" />
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.CaptionCategoryDetailsActivity"
+            android:name=".Ui.Activity.HowToUseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.Activity.DpMakerEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.Activity.DPMakerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.Activity.QuoteItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.Activity.QuoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.Activity.CaptionCategoryDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".Ui.Activity.CaptionActivity"
@@ -60,8 +74,17 @@
             </intent-filter>
         </activity>
     </application>
+    <queries>
+        <package android:name="com.twitter.android" />
+
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.instagram.android" />
+    </queries>
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 

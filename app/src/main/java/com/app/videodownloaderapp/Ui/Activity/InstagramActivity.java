@@ -5,12 +5,17 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.app.videodownloaderapp.Const.Constants;
 import com.app.videodownloaderapp.R;
 import com.app.videodownloaderapp.Ui.Adapters.InstagramPagerAdapter;
 import com.app.videodownloaderapp.Ui.Fragments.InstagramAllFragment;
@@ -28,6 +33,9 @@ public class InstagramActivity extends AppCompatActivity implements View.OnClick
     private LinearLayout LLInstagram, LLDownInstagram, LlStoryInstagram;
     private ImageView IvInstagramBottom, IvDownInstagram, IvStoryInstagram;
     private TextView TvInstagramBottom, TvDownInstagram, TvStoryInstagram;
+    private ImageView IvInstagramTop;
+    private ImageView IvUseTop;
+    private boolean IsInst = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +50,8 @@ public class InstagramActivity extends AppCompatActivity implements View.OnClick
         context = this;
         TvTitle = (TextView) findViewById(R.id.TvTitle);
         IvBack = (ImageView) findViewById(R.id.IvBack);
+        IvInstagramTop = (ImageView) findViewById(R.id.IvInstagramTop);
+        IvUseTop = (ImageView) findViewById(R.id.IvUseTop);
         PagerInstagram = (ViewPager) findViewById(R.id.PagerInstagram);
         LLInstagram = (LinearLayout) findViewById(R.id.LLInstagram);
         IvInstagramBottom = (ImageView) findViewById(R.id.IvInstagramBottom);
@@ -59,6 +69,8 @@ public class InstagramActivity extends AppCompatActivity implements View.OnClick
         LLInstagram.setOnClickListener(this);
         LLDownInstagram.setOnClickListener(this);
         LlStoryInstagram.setOnClickListener(this);
+        IvInstagramTop.setOnClickListener(this);
+        IvUseTop.setOnClickListener(this);
         PagerInstagram.setOnPageChangeListener(this);
     }
 
@@ -71,6 +83,9 @@ public class InstagramActivity extends AppCompatActivity implements View.OnClick
 
     private void VideoInitActions() {
         IvBack.setVisibility(View.VISIBLE);
+        IvInstagramTop.setVisibility(View.VISIBLE);
+        IvUseTop.setVisibility(View.VISIBLE);
+        TvTitle.setText("Instagram");
         ArrayList<Fragment> fragments = new ArrayList<>();
         fragments.add(new InstagramListFragment());
         fragments.add(new InstagramDownloadFragment());
@@ -82,6 +97,7 @@ public class InstagramActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View v) {
+        IsInst = false;
         switch (v.getId()) {
             case R.id.IvBack:
                 finish();
@@ -98,6 +114,40 @@ public class InstagramActivity extends AppCompatActivity implements View.OnClick
                 changeTabSelectedColor(LlStoryInstagram);
                 PagerInstagram.setCurrentItem(2);
                 break;
+            case R.id.IvUseTop:
+                GotoHowToUsed();
+                break;
+            case R.id.IvInstagramTop:
+                GotoInstagram();
+                break;
+        }
+    }
+
+    private void GotoHowToUsed() {
+        Intent intent = new Intent(context, HowToUseActivity.class);
+        intent.putExtra(Constants.ISFromWhere, "instagram");
+        startActivity(intent);
+    }
+
+    private void GotoInstagram() {
+        try {
+            getApplicationContext().getPackageManager().getApplicationInfo("com.instagram.android", 0);
+            IsInst = true;
+        } catch (PackageManager.NameNotFoundException unused) {
+            unused.getMessage();
+        }
+        if (IsInst) {
+            Uri parse = Uri.parse("com.instagram.android");
+            Intent intent = getPackageManager().getLaunchIntentForPackage("com.instagram.android");
+            if (intent != null) {
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.setData(parse);
+                startActivity(intent);
+                Toast.makeText(context, getResources().getString(R.string.toast_instagram_not_found), Toast.LENGTH_LONG).show();
+                return;
+            }
+            Toast.makeText(context, getResources().getString(R.string.toast_instagram_not_found), Toast.LENGTH_LONG).show();
+            return;
         }
     }
 

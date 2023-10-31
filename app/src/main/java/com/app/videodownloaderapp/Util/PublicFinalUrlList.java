@@ -27,6 +27,7 @@ public class PublicFinalUrlList {
 
     public ArrayList<String> getUrlList() {
         ArrayList<String> arrayList = new ArrayList<>();
+        System.out.println("------ PublicfinalJsonGet 111: " + PublicfinalJsonGet.getGraphql().toString());
         if (this.PublicfinalJsonGet.getGraphql().getShortcode_media().getEdge_sidecar_to_children() != null) {
             for (int i = 0; i < this.PublicfinalJsonGet.getGraphql().getShortcode_media().getEdge_sidecar_to_children().getImageCount(); i++) {
                 if (this.PublicfinalJsonGet.getGraphql().getShortcode_media().getEdge_sidecar_to_children().getEdges().get(i).getNode().getVideo_url() != null) {

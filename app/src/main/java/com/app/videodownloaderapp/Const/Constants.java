@@ -15,10 +15,7 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.android.volley.Response;
 import com.app.videodownloaderapp.R;
-
-import org.json.JSONObject;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -66,6 +63,14 @@ public class Constants {
     public static String RootImageDirectoryTwitter;
     public static String RootImageDirectoryWhatsapp;
     public static String RootVideoDirectoryFacebookStory;
+    public static String ISFromWhere = "isFromWhere";
+
+    public static int[] Fb_Image = {R.drawable.fb3, R.drawable.fb4};
+    public static int[] Fb_Text = {R.string.open_facebook, R.string.facebook_copy_link, R.string.open_app};
+    public static int[] In_Image = {R.drawable.insta3, R.drawable.insta4};
+    public static int[] In_Text = {R.string.open_instagram, R.string.copy_link, R.string.open_app};
+    public static int[] Twit_Image = {R.drawable.tw3, R.drawable.tw4};
+    public static int[] Twit_Text = {R.string.open_twitter, R.string.facebook_copy_link, R.string.open_app};
 
     public static boolean isInternetConnected(final Context context) {
         NetworkInfo activeNetworkInfo = ((ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();

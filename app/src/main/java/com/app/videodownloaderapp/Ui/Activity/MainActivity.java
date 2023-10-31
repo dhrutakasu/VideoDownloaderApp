@@ -75,10 +75,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(context, InstagramActivity.class));
                 break;
             case R.id.ConsFacebook:
+                startActivity(new Intent(context, FacebookActivity.class));
                 break;
             case R.id.ConsWhatsapp:
                 break;
             case R.id.ConsTwitter:
+                startActivity(new Intent(context, TwitterActivity.class));
                 break;
             case R.id.CardHashtag:
                 startActivity(new Intent(context, HashtagActivity.class));

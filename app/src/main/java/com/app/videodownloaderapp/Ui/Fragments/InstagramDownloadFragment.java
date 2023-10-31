@@ -11,7 +11,11 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.app.videodownloaderapp.Models.InstaDataProvider;
 import com.app.videodownloaderapp.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,6 +28,7 @@ public class InstagramDownloadFragment extends Fragment {
     private View view;
     private RecyclerView RvDownloadData;
     private ImageView TvNoDataFound;
+    private List<String> instaDownloadedList = new ArrayList<>();
 
     @Nullable
     @Override
@@ -47,4 +52,16 @@ public class InstagramDownloadFragment extends Fragment {
 
     private void VideoInitActions() {
     }
+
+        @Override
+        public void onResume() {
+            super.onResume();
+            if (instaDownloadedList.size()<0){
+                TvNoDataFound.setVisibility(View.VISIBLE);
+                RvDownloadData.setVisibility(View.GONE);
+                return;
+            }
+            TvNoDataFound.setVisibility(View.GONE);
+            RvDownloadData.setVisibility(View.VISIBLE);
+        }
 }

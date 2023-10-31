@@ -103,4 +103,22 @@
     <string name="vertical">Vertical</string>
     <string name="degree">Degree</string>
     <string name="animal">Animal</string>
+    <string name="how_to_download">How to Download</string>
+    <string name="_1_open_tiktok">1. Open TikTok</string>
+    <string name="fourth_how_too">2. Open Status Download</string>
+    <string name="open_facebook">1. Open Facebook</string>
+    <string name="open_instagram">1. Open Instagram</string>
+    <string name="open_twitter">1.Open Twitter</string>
+    <string name="facebook_copy_link">Click on share icon and select copy link</string>
+    <string name="copy_link">2. Click on three dot and copy link</string>
+    <string name="open_app">3. Open Video Download App</string>
+    <string name="toast_facebook_not_found">facebook app not installing</string>
+    <string name="facebook_login">Download stories login with facebook</string>
+    <string name="toast_twitter_not_found">twitter app not installing</string>
+    <string name="why_login">Why Login?</string>
+    <string name="instagram_alert">The website you will login is the Instagram official website. We won\'t get your information in any way</string>
+    <string name="instagram_private_story_alert">According to Instagram requirements, you will need to login to download private post or story</string>
+    <string name="you_don_apos_t_need_to_loging_to_download_public_facebook_post">You don\'t need to loging to download public Facebook post.</string>
+    <string name="login_amp_download">Login &amp; Download</string>
+    <string name="toast_now_paste_link_again"><![CDATA[now paste link again &amp; download]]></string>
 </resources>

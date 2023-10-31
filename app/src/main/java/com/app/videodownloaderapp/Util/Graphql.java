@@ -14,4 +14,11 @@ public class Graphql {
     public void setShortcode_media(Shortcode_Media shortcode_Media) {
         this.shortcode_media = shortcode_Media;
     }
+
+    @Override
+    public String toString() {
+        return "Graphql{" +
+                "shortcode_media=" + shortcode_media +
+                '}';
+    }
 }

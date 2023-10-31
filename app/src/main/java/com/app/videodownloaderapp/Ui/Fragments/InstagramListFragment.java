@@ -1,22 +1,30 @@
 package com.app.videodownloaderapp.Ui.Fragments;
 
 import android.app.Dialog;
+import android.app.DownloadManager;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.webkit.MimeTypeMap;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -29,10 +37,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 
@@ -50,8 +56,10 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.app.videodownloaderapp.Const.Constants;
+import com.app.videodownloaderapp.Models.InstaDataProvider;
 import com.app.videodownloaderapp.Models.VideoDownloaderDownloadModel;
 import com.app.videodownloaderapp.R;
+import com.app.videodownloaderapp.Ui.Activity.InstagramLoginActivity;
 import com.app.videodownloaderapp.Ui.Adapters.VideoDownloaderDownloadAdapter;
 import com.app.videodownloaderapp.Util.FinalJsonGet;
 import com.app.videodownloaderapp.Util.FinalJsonPrivate;
@@ -60,7 +68,6 @@ import com.app.videodownloaderapp.Util.PrivateFinalUrlList;
 import com.app.videodownloaderapp.Util.PublicFinalUrlList;
 import com.github.ybq.android.spinkit.SpinKitView;
 import com.github.ybq.android.spinkit.style.FadingCircle;
-import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 
@@ -73,7 +80,9 @@ import java.io.FileOutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.regex.Pattern;
@@ -109,6 +118,15 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
     public String cookie = "null";
     private String downloadFileName;
     private Dialog imageDownloadDialog;
+    private WebView browser;
+    int webProgress = 0;
+
+    boolean isWebViewLoaded = false;
+    private int counter = 0;
+    List<InstaDataProvider> instaDataProviderList = new ArrayList<>();
+    List<InstaDataProvider> instaDownloadedList = new ArrayList<>();
+    int downloadPostCount;
+    private DownloadManager downloadManager;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -136,6 +154,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
         ConsProgressKit = view.findViewById(R.id.ConsProgressKit);
         ProgressKit = view.findViewById(R.id.ProgressKit);
         TvMsg = view.findViewById(R.id.TvMsg);
+        browser = view.findViewById(R.id.browser);
     }
 
     private void VideoInitListerns() {
@@ -145,9 +164,160 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
     }
 
     private void VideoInitActions() {
-        this.requestQueue = Volley.newRequestQueue(context);
-        this.filename = new ArrayList<>();
-        this.cookie = getActivity().getSharedPreferences("cookie", 0).getString("flag", null);
+        requestQueue = Volley.newRequestQueue(context);
+        filename = new ArrayList<>();
+        instaDownloadedList = new ArrayList<>();
+        cookie = getActivity().getSharedPreferences("cookie", 0).getString("flag", null);
+    /*    downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
+        browser.getSettings().setLoadsImagesAutomatically(true);
+        browser.getSettings().setJavaScriptEnabled(true);
+        browser.getSettings().setDomStorageEnabled(true);
+        browser.getSettings().setAllowFileAccess(true);
+        browser.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        browser.setWebChromeClient(new ChromeClient());
+        browser.setWebViewClient(new WebClient());
+        browser.loadUrl("https://savefrom.biz/in4/instagram-downloader");
+
+        browser.setDownloadListener(new DownloadListener() {
+            @Override
+            public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
+                System.out.println(">>>>>>>url21 : " + url);
+                System.out.println(">>>>>>>url21 : " + userAgent);
+                System.out.println(">>>>>>>url21 : " + contentDisposition);
+                System.out.println(">>>>>>>url21 : " + mimetype);
+                System.out.println(">>>>>>>url21 : " + contentLength);
+
+                InstaDataProvider instaDataProvider = new InstaDataProvider();
+                if (mimetype.contains("image/jpeg")) {
+                    instaDataProvider.setVideo(false);
+                } else {
+                    instaDataProvider.setVideo(true);
+
+                    String str = context.getFilesDir().getAbsolutePath() + File.separator + getString(R.string.app_name) + File.separator + "Instagram";
+                    File file = new File(str);
+                    if (!file.exists()) {
+                        file.mkdirs();
+                    }
+
+                    if (str.contains("insta")) {
+                        try {
+                            url = URLDecoder.decode(url, "UTF-8").split("uri=")[1].split("&dl=1")[0];
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+
+                System.out.println(">>>>>>>url210 : " + url);
+                instaDataProvider.setTitle(URLUtil.guessFileName(url, null, null));
+                instaDataProvider.setThumbnailUrl(url);
+                instaDataProvider.setDownloadUrl(url);
+                instaDataProvider.setDownloadCompleted(false);
+                instaDataProviderList.add(instaDataProvider);
+                downloadPostCount = instaDataProviderList.size();
+                if (instaDataProviderList != null && instaDataProviderList.size() > 0 && downloadPostCount == instaDataProviderList.size()) {
+                    counter = 0;
+//                    SharedPreferences.Editor edit = context.getSharedPreferences("PRE_URL_DATA", 0).edit();
+//                    edit.putString("data_url", new Gson().toJson(instaDataProviderList));
+//                    edit.commit();
+//                    sharedText = "";
+//                    clearClipBoard();
+                    startDownloading();
+//                    displayViewPager();
+                    return;
+                }
+                counter++;
+
+                browser.evaluateJavascript("javascript:document.querySelectorAll('button.MuiButton-root')[" + counter + "].click()", null);
+            }
+        });*/
+    }
+
+    public void startDownloading() {
+//        isInProcess = false;
+        ContentValues contentValues = new ContentValues();
+        if (Build.VERSION.SDK_INT >= 29) {
+            String str = context.getFilesDir().getAbsolutePath() + File.separator + getString(R.string.app_name) + File.separator + "Instagram";
+            File file = new File(str);
+            if (!file.exists()) {
+                file.mkdirs();
+            }
+            for (int i = 0; i < instaDataProviderList.size(); i++) {
+                String downloadUrl = instaDataProviderList.get(i).getDownloadUrl();
+                String title = instaDataProviderList.get(i).getTitle();
+                System.out.println(">>>>>>>title : " + title);
+                contentValues.put("_display_name", title);
+                contentValues.put("relative_path", str);
+                if (instaDataProviderList.get(i).isVideo()) {
+                    contentValues.put("mime_type", "video/*");
+                } else {
+                    contentValues.put("mime_type", "image/*");
+                }
+                DownloadManager.Request request = new DownloadManager.Request(Uri.parse(downloadUrl));
+                request.setAllowedNetworkTypes(3);
+                request.setTitle("Downloading : " + title);
+                request.setDescription("Saved At :  " + str);
+                request.setVisibleInDownloadsUi(true);
+                request.setNotificationVisibility(0);
+                request.setNotificationVisibility(1);
+                request.setAllowedOverRoaming(true);
+                request.setDestinationUri(Uri.fromFile(new File(str, title)));
+                instaDataProviderList.get(i).setDownloadRefId(downloadManager.enqueue(request));
+                ConsProgressKit.setVisibility(View.GONE);
+
+            }
+        } else {
+            String str2 = context.getFilesDir().getAbsolutePath() + File.separator + getString(R.string.app_name) + File.separator + "Instagram";
+            File file2 = new File(str2);
+            if (!file2.exists()) {
+                file2.mkdirs();
+            }
+            for (int i2 = 0; i2 < instaDataProviderList.size(); i2++) {
+                String downloadUrl2 = instaDataProviderList.get(i2).getDownloadUrl();
+                String title2 = instaDataProviderList.get(i2).getTitle();
+                System.out.println(">>>>>>>title22 : " + title2);
+
+                DownloadManager.Request request2 = new DownloadManager.Request(Uri.parse(downloadUrl2));
+                request2.setAllowedNetworkTypes(3);
+                request2.setTitle("Downloading : " + title2);
+                request2.setDescription("Saved At :  " + str2);
+                request2.setVisibleInDownloadsUi(true);
+                request2.setNotificationVisibility(0);
+                request2.setNotificationVisibility(1);
+                request2.setAllowedOverRoaming(true);
+                request2.setDestinationUri(Uri.fromFile(new File(str2, title2)));
+                instaDataProviderList.get(i2).setDownloadRefId(downloadManager.enqueue(request2));
+                ConsProgressKit.setVisibility(View.GONE);
+
+            }
+        }
+
+    }
+
+    public class ChromeClient extends WebChromeClient {
+        private ChromeClient() {
+        }
+
+        @Override
+        public void onProgressChanged(WebView view, int newProgress) {
+            webProgress = newProgress;
+
+            super.onProgressChanged(view, newProgress);
+        }
+    }
+
+    public class WebClient extends WebViewClient {
+        private WebClient() {
+        }
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+            if (webProgress != 100 || isWebViewLoaded) {
+                return;
+            }
+            isWebViewLoaded = true;
+        }
     }
 
     @Override
@@ -169,6 +339,15 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
     public void onResume() {
         super.onResume();
         this.cookie = getActivity().getSharedPreferences("cookie", 0).getString("instagram", null);
+        if (instaDownloadedList.size()<0){
+            IvNotFound.setVisibility(View.VISIBLE);
+            RvDownLoaded.setVisibility(View.GONE);
+            RvYOurDownload.setVisibility(View.GONE);
+            return;
+        }
+        IvNotFound.setVisibility(View.GONE);
+        RvDownLoaded.setVisibility(View.VISIBLE);
+        RvYOurDownload.setVisibility(View.VISIBLE);
     }
 
     private void GotoPasteLink() {
@@ -212,8 +391,8 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
             ConsProgressKit.setVisibility(View.GONE);
             Toast.makeText(getActivity(), getResources().getString(R.string.toast_stroy_highligth_notsupported), Toast.LENGTH_SHORT).show();
         } else if (mediaType.isValidLink().equals("post")) {
-            String m2 = inputUrl.split(Pattern.quote("?"))[0] + "?__a=1";
-//            String m2 = inputUrl.split(Pattern.quote("?"))[0] + "?__a=1&__d=dis";
+//            String m2 = inputUrl.split(Pattern.quote("?"))[0] + "?__a=1";
+            String m2 = inputUrl.split(Pattern.quote("?"))[0] + "?__a=1&__d=dis";
             if (Constants.isInternetConnected(getActivity())) {
                 ConsDownload.setClickable(false);
                 inputUrl = EdtUrl.getText().toString().trim();
@@ -257,7 +436,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                     }
                 });*/
 
-                StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://www.instagram.com/javad_masoumi/?__a=1&__d=dis",
+          /*      StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://www.instagram.com/p/Cy_SOdwg6ej/?__a=1&__d=dis",
                         new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
@@ -293,17 +472,31 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                         });
 
                 // Add the request to the RequestQueue
-                requestQueue.add(stringRequest);
+                requestQueue.add(stringRequest);*/
 
 
-               /* requestQueue.add(new JsonObjectRequest(Request.Method.GET, m2, null, obj -> {
+                requestQueue.add(new JsonObjectRequest(Request.Method.GET, "https://www.instagram.com/p/Cy8sr-aI9wK/?__a=1&__d=dis", null, obj -> {
                     JSONObject jSONObject = obj;
-                    System.out.println("-------- - - - ssss obj: " + jSONObject.toString());
-                    if (String.valueOf(jSONObject).contains("{\"title\":\"Restricted Video\",\"description\":\"You must be 18 years old or over to see this video\"}")) {
-                        PrivateDataProcess(obj.toString());
-                        return;
-                    }
-                    PublicfinalJsonGet = new GsonBuilder().create().fromJson(String.valueOf(jSONObject), FinalJsonGet.class);
+
+//                    if (String.valueOf(jSONObject).contains("{\"title\":\"Restricted Video\",\"description\":\"You must be 18 years old or over to see this video\"}")) {
+//                        PrivateDataProcess(obj.toString());
+//                        return;
+//                    }
+                    System.out.println("-------- - - - ssss obj: " + Arrays.toString(new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().toArray()));
+//                    for (int i = 0; i < new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().size(); i++) {
+//                        System.out.println("-------- - - - ssss obj for : " + Arrays.toString(new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getUsertags().getIn().toArray()));
+//                        for (int j = 0; j < new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getUsertags().getIn().size(); j++) {
+//                            System.out.println("-------- - - - ssss obj for jj  : " + new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getUsertags().getIn().get(j).getUser().getUsername());
+//                        }
+//                    }
+//                        System.out.println("-------- - - - ssss obj111: " + jSONObject.toString());
+//                        if (jSONObject.get("carousel_media_count")!=null){
+//                            System.out.println("-------- - - - ssss obj001: " + jSONObject.get("carousel_media_count").toString());
+//                            System.out.println("-------- - - - ssss obj002: " + jSONObject.get("carousel_media").toString());
+//
+//                        }
+                    /*  PublicfinalJsonGet = new GsonBuilder().create().fromJson(String.valueOf(jSONObject), FinalJsonGet.class);
+                    System.out.println("------ PublicfinalJsonGet : " + PublicfinalJsonGet.toString());
                     PublicFinalUrlList publicFinalUrlList = new PublicFinalUrlList(PublicfinalJsonGet);
                     list.clear();
                     list = publicFinalUrlList.getUrlList();
@@ -331,11 +524,20 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                         } else {
                             new DownloadImageAsyncTask(context).execute(str1);
                         }
-                    }
+                    }*/
                 }, volleyError -> {
-                    PrivateDataProcess(volleyError.getMessage());
-                }));*/
-//                return;
+                    loginDialog();
+                    Toast.makeText(context, "" + volleyError.networkResponse, Toast.LENGTH_SHORT).show();
+                    PrivateDataProcess(volleyError.networkResponse.toString());
+                }) {
+                    public Map<String, String> getHeaders() throws AuthFailureError {
+                        System.out.println("-------   auth : " + cookie);
+                        HashMap hashMap = new HashMap();
+                        hashMap.put("Cookie", cookie);
+                        return hashMap;
+                    }
+                });
+                return;
             }
             ConsProgressKit.setVisibility(View.GONE);
             Toast.makeText(getActivity(), getResources().getString(R.string.no_internet_message), Toast.LENGTH_SHORT).show();
@@ -344,10 +546,12 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
             Toast.makeText(getActivity(), getResources().getString(R.string.open_story_highligth), Toast.LENGTH_SHORT).show();
         }
     }
+
     interface InstagramAPI {
         @GET("{shortcode}/?__a=1")
         Call<JsonObject> getPostData(@Path("shortcode") String shortcode);
     }
+
     public final void PrivateDataProcess(String str) {
         System.out.println("-------- - - - ssss : " + str);
         this.requestQueue.add(new JsonObjectRequest(str, new Response.Listener<JSONObject>() {
@@ -356,7 +560,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                 if (String.valueOf(jSONObject).contains("{\"title\":\"Restricted Video\",\"description\":\"You must be 18 years old or over to see this video\"}")) {
                     ConsProgressKit.setVisibility(View.GONE);
                     ConsDownload.setClickable(true);
-//                    loginDialog();
+                    loginDialog();
                     return;
                 }
                 PrivatefinalJsonGet = new GsonBuilder().create().fromJson(String.valueOf(jSONObject), FinalJsonPrivate.class);
@@ -395,11 +599,11 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                 if (volleyError instanceof NetworkError) {
                     Toast.makeText(getActivity(), getResources().getString(R.string.network_error), Toast.LENGTH_SHORT).show();
                 } else if (volleyError instanceof ServerError) {
-//                    loginDialog();
+                    loginDialog();
                 } else if (volleyError instanceof AuthFailureError) {
-//                    loginDialog();
+                    loginDialog();
                 } else if (volleyError instanceof ParseError) {
-//                    loginDialog();
+                    loginDialog();
                 } else if (volleyError instanceof Network) {
                     Toast.makeText(getActivity(), getResources().getString(R.string.network_error), Toast.LENGTH_SHORT).show();
                 } else if (volleyError instanceof TimeoutError) {
@@ -411,6 +615,39 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                 HashMap hashMap = new HashMap();
                 hashMap.put("Cookie", cookie);
                 return hashMap;
+            }
+        });
+    }
+
+    private void loginDialog() {
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.requestWindowFeature(1);
+        dialog.setContentView(R.layout.dialog_login);
+        dialog.setCancelable(true);
+        DisplayMetrics metrics = new DisplayMetrics();
+        requireActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        Window dialogWindow = dialog.getWindow();
+        dialogWindow.setLayout(metrics.widthPixels - 100, -2);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        dialog.show();
+        ((TextView) dialog.findViewById(R.id.TvWhyLogins)).setOnClickListener(new View.OnClickListener() {
+            public final void onClick(View view) {
+                Dialog dial = new Dialog(getActivity());
+                dial.setContentView(R.layout.dialog_why_login);
+                dial.setCancelable(true);
+                dial.show();
+                ((TextView) dial.findViewById(R.id.TvGotItDialog)).setOnClickListener(new View.OnClickListener() {
+                    public final void onClick(View view) {
+                        ProgressKit.setVisibility(View.GONE);
+                    }
+                });
+            }
+        });
+        ((TextView) dialog.findViewById(R.id.TvLogins)).setOnClickListener(new View.OnClickListener() {
+            public final void onClick(View view) {
+                dialog.dismiss();
+                ProgressKit.setVisibility(View.GONE);
+                startActivity(new Intent(getActivity(), InstagramLoginActivity.class));
             }
         });
     }

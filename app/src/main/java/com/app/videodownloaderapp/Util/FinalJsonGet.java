@@ -14,4 +14,11 @@ public class FinalJsonGet {
     public void setGraphql(Graphql graphql2) {
         this.graphql = graphql2;
     }
+
+    @Override
+    public String toString() {
+        return "FinalJsonGet{" +
+                "graphql=" + graphql +
+                '}';
+    }
 }
