@@ -1,20 +1,39 @@
 package com.app.videodownloaderapp.Ui.Activity;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.app.videodownloaderapp.Const.Constants;
+import com.app.videodownloaderapp.Models.DpMakerModelItem;
 import com.app.videodownloaderapp.R;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.RequestManager;
+import com.bumptech.glide.load.DataSource;
+import com.bumptech.glide.load.engine.GlideException;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.request.target.Target;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.yalantis.ucrop.view.CropImageView;
+
+import java.util.ArrayList;
 
 public class DpMakerEditActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,6 +47,13 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
     private TextView TvHorizontal, TvVertical, TvDegree, TvSeekValue;
     private SeekBar SeekRotate;
     private RecyclerView RvAllFrame, RvCategoryName;
+    private String Images;
+    private int Id;
+    private String CatName;
+    private String ImagesArray;
+    private String Items;
+    private DpMakerModelItem categoryModel;
+    private ArrayList<String> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,8 +91,45 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
     }
 
     private void VideoInitActions() {
+        Images = getIntent().getStringExtra(Constants.DPMakerItem);
+        Id = getIntent().getIntExtra(Constants.DPMakerPos, 0);
+        CatName = getIntent().getStringExtra(Constants.DpMakerName);
+        ImagesArray = getIntent().getStringExtra(Constants.DPMakerValue);
+        Items = getIntent().getStringExtra(Constants.DpMakerItemList);
         IvBack.setVisibility(View.VISIBLE);
         TvTitle.setText("Edit Image");
+        DpMakerModelItem fromJson = (DpMakerModelItem) new Gson().fromJson(ImagesArray, DpMakerModelItem.class);
+        categoryModel = fromJson;
+        list = (ArrayList) fromJson.getImages();
+        ArrayList arrayList = (ArrayList) new Gson().fromJson(Items, new TypeToken<ArrayList<DpMakerModelItem>>() {
+        }.getType());
+        loadAnimation();
+
+    }
+
+    private void loadAnimation() {
+        RequestOptions requestOptions = new RequestOptions();
+        ProgressEdit.setVisibility(View.VISIBLE);
+        RequestManager requestManager = Glide.with(this);
+
+        StringBuilder m = new StringBuilder().append("https://api.appcodiz.com/DPMaker/");
+        m.append(Items);
+        requestManager.load(m.toString()).listener(new RequestListener<Drawable>() {
+            @Override
+            public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+                ProgressEdit.setVisibility(View.VISIBLE);
+                return false;
+            }
+
+            @Override
+            public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
+                RotateAnimation rotateAnimation = new RotateAnimation(CropImageView.DEFAULT_ASPECT_RATIO, 360.0f, 1, 0.5f, 1, 0.5f);
+                rotateAnimation.setDuration(1000);
+                rotateAnimation.setInterpolator(new LinearInterpolator());
+                IvImgEdit.startAnimation(rotateAnimation);
+                return false;
+            }
+        }).into(IvImgEdit);
     }
 
     @Override

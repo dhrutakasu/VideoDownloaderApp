@@ -18,7 +18,9 @@ import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
+import com.squareup.picasso.Picasso;
 
 import java.io.File;
 import java.io.InputStream;
@@ -59,24 +61,12 @@ public class DpMakerImgAdapter extends RecyclerView.Adapter<DpMakerImgAdapter.My
         System.out.println("------- - -- srr mm : " + m.toString());
 
         try {
-            Glide.with(context).load("https://api.appcodiz.com/DPMaker/storage/Animal%20Print/1.webp")
+            Picasso.get()
+                    .load(m.toString())
                     .placeholder(R.drawable.ic_image_placeholder)
                     .error(R.drawable.ic_image_placeholder)
-                    .skipMemoryCache(true)
-                    .diskCacheStrategy(DiskCacheStrategy.NONE)
-                    .listener(new RequestListener<Drawable>() {
-                        @Override
-                        public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
-                            System.out.println("------- - -- srr eroor : " + e.getMessage());
-                            return false;
-                        }
+                    .into(holder.IvFrame);
 
-                        @Override
-                        public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
-                            holder.IvFramePlaceHolder.setVisibility(View.GONE);
-                            return false;
-                        }
-                    }).load(holder.IvFrame);
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("------- - -- srr err : " + e.getMessage());

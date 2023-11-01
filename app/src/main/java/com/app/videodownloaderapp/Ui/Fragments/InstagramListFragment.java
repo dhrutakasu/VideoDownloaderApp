@@ -483,12 +483,12 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
 //                        return;
 //                    }
                     System.out.println("-------- - - - ssss obj: " + Arrays.toString(new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().toArray()));
-//                    for (int i = 0; i < new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().size(); i++) {
-//                        System.out.println("-------- - - - ssss obj for : " + Arrays.toString(new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getUsertags().getIn().toArray()));
-//                        for (int j = 0; j < new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getUsertags().getIn().size(); j++) {
-//                            System.out.println("-------- - - - ssss obj for jj  : " + new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getUsertags().getIn().get(j).getUser().getUsername());
+                    for (int i = 0; i < new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().size(); i++) {
+                        System.out.println("-------- - - - ssss obj for : " + Arrays.toString(new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getUsertags().getIn().toArray()));
+//                        for (int j = 0; j < new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getCaption().getUser().getUsername().size(); j++) {
+                            System.out.println("-------- - - - ssss obj for jj  : " + new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getCaption().getUser().getUsername());
 //                        }
-//                    }
+                    }
 //                        System.out.println("-------- - - - ssss obj111: " + jSONObject.toString());
 //                        if (jSONObject.get("carousel_media_count")!=null){
 //                            System.out.println("-------- - - - ssss obj001: " + jSONObject.get("carousel_media_count").toString());

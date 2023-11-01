@@ -9,6 +9,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -76,6 +77,9 @@ public class DPMakerActivity extends AppCompatActivity implements View.OnClickLi
 
 //        https://api.appcodiz.com/DPMaker/storage/Animal%20Print/1.webp
 //        https://api.appcodiz.com/DPMaker/storage/Badge/1.webp
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+
             if (arrayList.size() > 0) {
 
                 RvDpFrame.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
