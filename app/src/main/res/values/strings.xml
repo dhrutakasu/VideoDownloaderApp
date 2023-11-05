@@ -121,4 +121,13 @@
     <string name="you_don_apos_t_need_to_loging_to_download_public_facebook_post">You don\'t need to loging to download public Facebook post.</string>
     <string name="login_amp_download">Login &amp; Download</string>
     <string name="toast_now_paste_link_again"><![CDATA[now paste link again &amp; download]]></string>
+    <string name="MSG_ASK_PERMISSION">This app needs permissions to use this feature. You can grant them in app settings.</string>
+    <string name="cannot_retrieve_cropped_image">cannot retrieve cropped image</string>
+    <string name="please_selectphoto">Please Select Photo..</string>
+    <string name="preview">preview</string>
+    <string name="chats">Chats</string>
+    <string name="status">Status</string>
+    <string name="calls">Calls</string>
+    <string name="give_stunning_look_to_your_profile_picture">Give stunning look to your profile picture</string>
+    <string name="propic">ProPic</string>
 </resources>

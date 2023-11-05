@@ -58,7 +58,6 @@ public class DpMakerImgAdapter extends RecyclerView.Adapter<DpMakerImgAdapter.My
         m.append(dpList.getPath());
         m.append("/");
         m.append(imageList.get(position));
-        System.out.println("------- - -- srr mm : " + m.toString());
 
         try {
             Picasso.get()

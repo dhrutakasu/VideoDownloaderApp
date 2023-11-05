@@ -3,10 +3,12 @@ package com.app.videodownloaderapp.Const;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Environment;
 import android.provider.Settings;
 import android.util.DisplayMetrics;
@@ -16,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.app.videodownloaderapp.R;
+import com.karumi.dexter.PermissionToken;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -23,9 +26,21 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Objects;
 
+import androidx.appcompat.app.AlertDialog;
+
 public class Constants {
 
     public static final String WHATSAPP_PKG = "com.whatsapp";
+    public static final String BUCKET_ID = "bucket_id";
+    public static final String FOLDER_NAME = "folder_name";
+    public static final String PATH = "path";
+    public static final String TYPE = "type";
+    public static final String SELECTED_PATH = "selected_path";
+    public static String PERVIEW = "preview";
+    public static final String FLIP_HORIZONTAL = "flip_horizontal";
+    public static final String FLIP_VERTICAL = "flip_vertical";
+    public static final String ROTATE = "rotate";
+    public static String SELECTED_BORDER = "selected_border";
     public static String DP_MAKER_FOLDER_NAME = "Dp Maker";
     public static String ROOT_PATH_DP_MAKER;
     public static String ROOT_PATH_FACEBOOK_VIDEO;
@@ -262,4 +277,49 @@ public class Constants {
         RootImageDirectoryTwitter = Environment.getExternalStorageDirectory() + str + ROOT_PATH_TWITTER_IMAGE;
 
     }
+
+    public static void showSettingsDialog(final Activity activity) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+        builder.setTitle("Need Permissions");
+        builder.setMessage("This app needs permissions to use this feature. You can grant them in app settings.");
+        builder.setPositiveButton("GOTO SETTINGS", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+                openSettings(activity);
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+    }
+
+    public static void showPermissionDialog(final Activity activity, final PermissionToken permissionToken) {
+        new AlertDialog.Builder(activity
+        ).setMessage(R.string.MSG_ASK_PERMISSION).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+                permissionToken.cancelPermissionRequest();
+            }
+        }).setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+                permissionToken.continuePermissionRequest();
+            }
+        }).setOnDismissListener(new DialogInterface.OnDismissListener() {
+            public void onDismiss(DialogInterface dialogInterface) {
+                permissionToken.cancelPermissionRequest();
+            }
+        }).show();
+    }
+
+    private static void openSettings(Activity activity) {
+        Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS");
+        intent.setData(Uri.fromParts("package", activity.getPackageName(), null));
+        activity.startActivityForResult(intent, 101);
+    }
+
 }

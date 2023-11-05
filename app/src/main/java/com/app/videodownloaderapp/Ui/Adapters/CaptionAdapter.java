@@ -36,7 +36,7 @@ public class CaptionAdapter extends RecyclerView.Adapter<CaptionAdapter.MyViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CaptionAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.TvCaptionNumber.setText(statusTypes.get(position).getNumber());
         holder.TvCaptionTitle.setText(statusTypes.get(position).getTitle());
 

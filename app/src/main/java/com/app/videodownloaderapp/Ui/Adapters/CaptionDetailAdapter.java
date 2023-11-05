@@ -39,7 +39,7 @@ public class CaptionDetailAdapter extends RecyclerView.Adapter<CaptionDetailAdap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CaptionDetailAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.TvCaptionDetailTitle.setText(statuses.get(position).getString());
         holder.IvCopy.setOnClickListener(view -> {
             ((ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE)).setPrimaryClip(ClipData.newPlainText(statuses.get(position).getString(), statuses.get(position).getString()));

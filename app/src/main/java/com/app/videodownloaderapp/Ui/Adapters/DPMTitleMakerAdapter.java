@@ -35,7 +35,7 @@ public class DPMTitleMakerAdapter extends RecyclerView.Adapter<DPMTitleMakerAdap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DPMTitleMakerAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.TvDPTitleName.setText(statusTypes.get(position).getName());
         if (selectedPosition == position) {
             holder.TvDPTitleName.setBackground(holder.itemView.getContext().getResources().getDrawable(R.drawable.gradient_selected));

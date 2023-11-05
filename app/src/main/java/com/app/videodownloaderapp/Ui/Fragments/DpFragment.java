@@ -59,7 +59,6 @@ public class DpFragment extends Fragment {
     private void VideoInitActions() {
         DpList = (DpMakerModelItem) new Gson().fromJson(getArguments().getString(Constants.DPMakerValue), DpMakerModelItem.class);
         RvDPMakerView.setLayoutManager(new GridLayoutManager(getContext(), 3, RecyclerView.VERTICAL, false));
-        System.out.println("------- - -- srr iii : "+DpList.getImages());
         DpMakerImgAdapter dpMakerImgAdapter = new DpMakerImgAdapter(getContext(), DpList, DpList.getImages(), new DpMakerImgAdapter.DpMakerListen() {
             @Override
             public void DpList(int pos, DpMakerModelItem dpList, List<String> images) {
@@ -67,7 +66,7 @@ public class DpFragment extends Fragment {
                 intent.putExtra(Constants.DPMakerItem, dpList.getPath() + "/" + ((String) images.get(pos)));
                 intent.putExtra(Constants.DPMakerPos, pos);
                 intent.putExtra(Constants.DpMakerName, dpList.getName());
-                intent.putExtra(Constants.DPMakerValue, new Gson().toJson((List<String>) images));
+                intent.putExtra(Constants.DPMakerValue, new Gson().toJson(DpList));
                 intent.putExtra(Constants.DpEdit, true);
                 intent.putExtra(Constants.DpMakerItemList, getArguments().getString(Constants.DPMakerItem));
                 startActivity(intent);

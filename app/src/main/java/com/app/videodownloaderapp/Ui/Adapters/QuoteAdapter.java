@@ -36,7 +36,7 @@ public class QuoteAdapter extends RecyclerView.Adapter<QuoteAdapter.MyViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull QuoteAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.TvCategoryTitle.setText(categoryDbs.get(position).getName());
         Glide.with(context).load(Integer.valueOf(context.getResources().getIdentifier("category" + categoryDbs.get(position).getId(), "drawable", context.getPackageName()))).into(holder.IvCategoryImage);
         holder.TvQuoteLength.setText(String.valueOf(new QuoteHelper(context).getQuoteId(categoryDbs.get(position).getId()).size()));

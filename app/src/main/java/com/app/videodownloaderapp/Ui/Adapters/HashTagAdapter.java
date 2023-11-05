@@ -35,7 +35,7 @@ public class HashTagAdapter extends RecyclerView.Adapter<HashTagAdapter.MyViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HashTagAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.TvHashtagName.setText(HashTagModel.get(position).getName().replace(" / ", " ").replace("/", " "));
         holder.TvHashtagName.setSelected(true);
         Glide.with(context).load(Integer.valueOf(context.getResources().getIdentifier("ic_" +

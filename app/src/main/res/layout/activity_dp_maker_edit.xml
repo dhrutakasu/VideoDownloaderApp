@@ -25,16 +25,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RlToolBar">
 
-        <ImageView
-            android:id="@+id/IvGallery"
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_marginBottom="@dimen/_10sdp"
-            android:src="@drawable/gallery"
-            app:layout_constraintBottom_toTopOf="@+id/ConsBottom"
-            app:layout_constraintEnd_toEndOf="parent" />
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ConsTopView"
             android:layout_width="0dp"
@@ -47,11 +37,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/IvImgEdit"
+            <com.app.videodownloaderapp.Util.CustomImageView
+                android:id="@+id/IvChooseImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="visible"
+                android:background="@drawable/drawable_mask_circle"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -70,18 +60,26 @@
                 android:indeterminateDrawable="@drawable/progress_animation"
                 android:visibility="gone" />
 
-            <com.app.videodownloaderapp.Util.CustomImageView
-                android:id="@+id/IvChooseImage"
+            <ImageView
+                android:id="@+id/IvImgEdit"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/drawable_mask_circle"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/IvGallery"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/gallery"
+            app:layout_constraintBottom_toTopOf="@+id/ConsBottom"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ConsBottom"
@@ -112,6 +110,7 @@
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:id="@+id/LlBorder"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -145,6 +144,7 @@
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:id="@+id/LlFlip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -178,6 +178,7 @@
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:id="@+id/LlRotate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"

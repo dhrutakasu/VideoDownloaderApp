@@ -71,5 +71,11 @@ dependencies {
     //todo swiperefreshlayout dependancy
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
 
+    //todo imageload dependancy
     implementation 'com.squareup.picasso:picasso:2.8'
+
+    //todo circleimageview dependancy
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
 }

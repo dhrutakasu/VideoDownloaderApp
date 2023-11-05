@@ -95,8 +95,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(context, DPMakerActivity.class));
                 break;
             case R.id.CardStory:
+                startActivity(new Intent(context, StoryActivity.class));
                 break;
             case R.id.CardCreation:
+                startActivity(new Intent(context, CreationActivity.class));
                 break;
         }
     }

@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.webkit.CookieManager;
 import android.webkit.MimeTypeMap;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -167,6 +168,9 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
         requestQueue = Volley.newRequestQueue(context);
         filename = new ArrayList<>();
         instaDownloadedList = new ArrayList<>();
+//        loginDialog();
+        String cookie = CookieManager.getInstance().getCookie("https://www.instagram.com/");
+        System.out.println("-------   auth coockieee : "+cookie);
         cookie = getActivity().getSharedPreferences("cookie", 0).getString("flag", null);
     /*    downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
         browser.getSettings().setLoadsImagesAutomatically(true);

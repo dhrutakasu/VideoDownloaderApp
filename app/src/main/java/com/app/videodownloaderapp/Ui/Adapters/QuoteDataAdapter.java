@@ -40,7 +40,7 @@ public class QuoteDataAdapter extends RecyclerView.Adapter<QuoteDataAdapter.MyVi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull QuoteDataAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         System.out.println("------- like : "+categoryDbs.get(position).getLikeQuote());
         System.out.println("------- quote : "+categoryDbs.get(position).getQuote());
         holder.TvQuoteDesc.setText(categoryDbs.get(position).getQuote());

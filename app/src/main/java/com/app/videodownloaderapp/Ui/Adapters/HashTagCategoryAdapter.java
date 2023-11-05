@@ -33,7 +33,7 @@ public class HashTagCategoryAdapter extends RecyclerView.Adapter<HashTagCategory
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HashTagCategoryAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.TvCategoryTagName.setText(HashTagModel.get(position).getTagName());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

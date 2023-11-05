@@ -8,4 +8,11 @@
     <style name="SwitchThemeFacebook">
         <item name="android:colorControlActivated">#4e69aa</item>
     </style>
+
+    <style name="customfontstyle">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="paddingEnd">@dimen/_32ssp</item>
+        <item name="paddingStart">@dimen/_32ssp</item>
+    </style>
+
 </resources>
