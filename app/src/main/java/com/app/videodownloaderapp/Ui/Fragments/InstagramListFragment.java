@@ -169,10 +169,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
         filename = new ArrayList<>();
         instaDownloadedList = new ArrayList<>();
 //        loginDialog();
-        String cookie = CookieManager.getInstance().getCookie("https://www.instagram.com/");
-        System.out.println("-------   auth coockieee : "+cookie);
-        cookie = getActivity().getSharedPreferences("cookie", 0).getString("flag", null);
-    /*    downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
+       /*    downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
         browser.getSettings().setLoadsImagesAutomatically(true);
         browser.getSettings().setJavaScriptEnabled(true);
         browser.getSettings().setDomStorageEnabled(true);
@@ -343,7 +340,7 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
     public void onResume() {
         super.onResume();
         this.cookie = getActivity().getSharedPreferences("cookie", 0).getString("instagram", null);
-        if (instaDownloadedList.size()<0){
+        if (instaDownloadedList.size() < 0) {
             IvNotFound.setVisibility(View.VISIBLE);
             RvDownLoaded.setVisibility(View.GONE);
             RvYOurDownload.setVisibility(View.GONE);
@@ -398,9 +395,12 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
 //            String m2 = inputUrl.split(Pattern.quote("?"))[0] + "?__a=1";
             String m2 = inputUrl.split(Pattern.quote("?"))[0] + "?__a=1&__d=dis";
             if (Constants.isInternetConnected(getActivity())) {
-                ConsDownload.setClickable(false);
-                inputUrl = EdtUrl.getText().toString().trim();
-                System.out.println("-------- - - - ssss m2: " + m2);
+                if (cookie == null) {
+                    loginDialog();
+                } else {
+                    ConsDownload.setClickable(false);
+                    inputUrl = EdtUrl.getText().toString().trim();
+                    System.out.println("-------- - - - ssss m2: " + m2);
                /* Gson gson = new GsonBuilder()
                         .setLenient()
                         .create();
@@ -479,20 +479,40 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                 requestQueue.add(stringRequest);*/
 
 
-                requestQueue.add(new JsonObjectRequest(Request.Method.GET, "https://www.instagram.com/p/Cy8sr-aI9wK/?__a=1&__d=dis", null, obj -> {
-                    JSONObject jSONObject = obj;
+                    requestQueue.add(new JsonObjectRequest(Request.Method.GET, m2.toString(), null, obj -> {
+                        JSONObject jSONObject = obj;
 
 //                    if (String.valueOf(jSONObject).contains("{\"title\":\"Restricted Video\",\"description\":\"You must be 18 years old or over to see this video\"}")) {
 //                        PrivateDataProcess(obj.toString());
 //                        return;
 //                    }
-                    System.out.println("-------- - - - ssss obj: " + Arrays.toString(new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().toArray()));
-                    for (int i = 0; i < new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().size(); i++) {
-                        System.out.println("-------- - - - ssss obj for : " + Arrays.toString(new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getUsertags().getIn().toArray()));
+                        //todo link
+//                        https://www.instagram.com/p/CzGKbh6tqLy/?__a=1&__d=dis
+                        System.out.println("-------- - - - ssss obj: " + obj.toString());
+                        System.out.println("-------- - - - ssss obj: " + Arrays.toString(new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().toArray()));
+                        for (int i = 0; i < new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().size(); i++) {
+                            System.out.println("-------- - - - ssss obj for : " + Arrays.toString(new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getUsertags().getIn().toArray()));
 //                        for (int j = 0; j < new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getCaption().getUser().getUsername().size(); j++) {
                             System.out.println("-------- - - - ssss obj for jj  : " + new GsonBuilder().create().fromJson(String.valueOf(jSONObject), com.app.videodownloaderapp.unknown2.Response.class).getItems().get(i).getCaption().getUser().getUsername());
+                            requestQueue.add(new JsonObjectRequest(Request.Method.GET, "https://www.instagram.com/p/pruthvirabari79/?__a=1&__d=dis", null, obje -> {
+                                JSONObject jsonOb = obje;
+
+                                System.out.println("-------- - - - ssss jsonOb: " + jsonOb.toString());
+
+                            }, volleyError -> {
+                                loginDialog();
+                                Toast.makeText(context, "" + volleyError.networkResponse, Toast.LENGTH_SHORT).show();
+                                PrivateDataProcess(volleyError.networkResponse.toString());
+                            }) {
+                                public Map<String, String> getHeaders() throws AuthFailureError {
+                                    System.out.println("-------   auth : " + cookie);
+                                    HashMap hashMap = new HashMap();
+                                    hashMap.put("Cookie", cookie);
+                                    return hashMap;
+                                }
+                            });
 //                        }
-                    }
+                        }
 //                        System.out.println("-------- - - - ssss obj111: " + jSONObject.toString());
 //                        if (jSONObject.get("carousel_media_count")!=null){
 //                            System.out.println("-------- - - - ssss obj001: " + jSONObject.get("carousel_media_count").toString());
@@ -529,19 +549,20 @@ public class InstagramListFragment extends Fragment implements View.OnClickListe
                             new DownloadImageAsyncTask(context).execute(str1);
                         }
                     }*/
-                }, volleyError -> {
-                    loginDialog();
-                    Toast.makeText(context, "" + volleyError.networkResponse, Toast.LENGTH_SHORT).show();
-                    PrivateDataProcess(volleyError.networkResponse.toString());
-                }) {
-                    public Map<String, String> getHeaders() throws AuthFailureError {
-                        System.out.println("-------   auth : " + cookie);
-                        HashMap hashMap = new HashMap();
-                        hashMap.put("Cookie", cookie);
-                        return hashMap;
-                    }
-                });
-                return;
+                    }, volleyError -> {
+                        loginDialog();
+                        Toast.makeText(context, "" + volleyError.networkResponse, Toast.LENGTH_SHORT).show();
+                        PrivateDataProcess(volleyError.networkResponse.toString());
+                    }) {
+                        public Map<String, String> getHeaders() throws AuthFailureError {
+                            System.out.println("-------   auth : " + cookie);
+                            HashMap hashMap = new HashMap();
+                            hashMap.put("Cookie", cookie);
+                            return hashMap;
+                        }
+                    });
+                    return;
+                }
             }
             ConsProgressKit.setVisibility(View.GONE);
             Toast.makeText(getActivity(), getResources().getString(R.string.no_internet_message), Toast.LENGTH_SHORT).show();
