@@ -4,11 +4,13 @@ import android.Manifest;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.util.DisplayMetrics;
@@ -40,8 +42,11 @@ import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.view.CropImageView;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import androidx.annotation.Nullable;
@@ -61,7 +66,7 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
     private ImageView IvGallery, IvImgEdit, IvChooseImage;
     private ProgressBar ProgressEdit;
     private LinearLayout LlBorderView, LlFlipView, LlRotateView;
-    private ConstraintLayout ConsFlipView, ConsRotateView;
+    private ConstraintLayout ConsFlipView, ConsRotateView, ConsTopView;
     private TextView TvHorizontal, TvVertical, TvDegree, TvSeekValue;
     private SeekBar SeekRotate;
     private RecyclerView RvAllFrame, RvCategoryName;
@@ -109,6 +114,7 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
         LlRotateView = findViewById(R.id.LlRotateView);
         ConsFlipView = findViewById(R.id.ConsFlipView);
         ConsRotateView = findViewById(R.id.ConsRotateView);
+        ConsTopView = findViewById(R.id.ConsTopView);
         TvHorizontal = findViewById(R.id.TvHorizontal);
         TvVertical = findViewById(R.id.TvVertical);
         SeekRotate = findViewById(R.id.SeekRotate);
@@ -121,6 +127,7 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
     private void VideoInitListerns() {
         IvBack.setOnClickListener(this);
         IvGallery.setOnClickListener(this);
+        IvDone.setOnClickListener(this);
         LlBorderView.setOnClickListener(this);
         LlFlipView.setOnClickListener(this);
         LlRotateView.setOnClickListener(this);
@@ -146,7 +153,7 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
         loadAnimation();
         RvCategoryName.setLayoutManager(new LinearLayoutManager(context, RecyclerView.HORIZONTAL, false));
         categoryNameAdapter = new CategoryNameAdapter(this, selectedPosition, arrayList, new CategoryNameAdapter.CategoryClickListener() {
-            public final void seCategoryListner(DpMakerModelItem videoDownloaderCategoryModel) {
+            public void seCategoryListner(DpMakerModelItem videoDownloaderCategoryModel) {
                 AllFrameAdapter videoDownloaderAllFrameAdapter = allFrameAdapter;
                 videoDownloaderAllFrameAdapter.dpMakerModelItem = videoDownloaderCategoryModel;
                 ArrayList<String> arrayList2 = new ArrayList<>();
@@ -271,6 +278,64 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
                     startActivity(intent);
                 }
                 break;
+            case R.id.IvDone:
+                GotoSave();
+                break;
+        }
+    }
+
+    private void GotoSave() {
+        if (selectedpath.equalsIgnoreCase("")) {
+            Toast.makeText(context, context.getResources().getString(R.string.please_selectphoto), Toast.LENGTH_SHORT).show();
+        } else {
+            final Dialog dialog = new Dialog(context);
+            dialog.requestWindowFeature(1);
+            dialog.setContentView(R.layout.dialog_save);
+            dialog.setCanceledOnTouchOutside(false);
+            dialog.setCancelable(false);
+            DisplayMetrics displayMetrics = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+            Window window = dialog.getWindow();
+            window.setLayout(displayMetrics.widthPixels - 100, -2);
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+            TextView TvCamera = (TextView) dialog.findViewById(R.id.TvCamera);
+            TextView TvGallery = (TextView) dialog.findViewById(R.id.TvGallery);
+            TvCamera.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    dialog.dismiss();
+                }
+            });
+            TvGallery.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    dialog.dismiss();
+                    ConsTopView.setDrawingCacheEnabled(true);
+                    Bitmap bitmap = Bitmap.createBitmap(ConsTopView.getDrawingCache());
+                    ConsTopView.setDrawingCacheEnabled(false);
+                    String root = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath();
+                    File myDir = new File(root, getString(R.string.app_name) + "/" + " DP Maker");
+                    if (!myDir.exists()) {
+                        myDir.mkdirs();
+                    }
+
+                    String mTimeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+
+                    String fname = "IMG_" + mTimeStamp + ".jpg";
+                    File file = new File(myDir, fname);
+                    if (file.exists()) file.delete();
+                    try {
+                        FileOutputStream out = new FileOutputStream(file);
+                        bitmap.compress(Bitmap.CompressFormat.JPEG, 90, out);
+                        out.flush();
+                        out.close();
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    Toast.makeText(context, "Save Successfully..", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(context, MainActivity.class));
+                }
+            });
+            dialog.show();
         }
     }
 
@@ -289,7 +354,7 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
         TextView TvGallery = (TextView) dialog.findViewById(R.id.TvGallery);
         TextView TvCancelGallery = (TextView) dialog.findViewById(R.id.TvCancelGallery);
         TvCamera.setOnClickListener(new View.OnClickListener() {
-            public final void onClick(View view) {
+            public void onClick(View view) {
                 dialog.dismiss();
                 String s3 = Manifest.permission.CAMERA;
                 Dexter.withContext(context)
@@ -313,12 +378,12 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
             }
         });
         TvGallery.setOnClickListener(new View.OnClickListener() {
-            public final void onClick(View view) {
+            public void onClick(View view) {
                 onPositiveButtonClick(dialog);
             }
         });
         TvCancelGallery.setOnClickListener(new View.OnClickListener() {
-            public final void onClick(View view) {
+            public void onClick(View view) {
                 dialog.dismiss();
             }
         });
@@ -440,44 +505,38 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case CAMERA_CODE:
-                switch (resultCode) {
-                    case RESULT_OK:
-                        File f = new File(selectedpath);
-                        System.out.println("------------  datra fff : " + f.getAbsolutePath());
-                        UCrop.of(Uri.fromFile(new File(f.getAbsolutePath())), Uri.fromFile(new File(f.getAbsolutePath())))
-                                .withAspectRatio(1, 1)
-                                .start(DpMakerEditActivity.this);
-                        break;
+                if (resultCode == RESULT_OK) {
+                    File f = new File(selectedpath);
+                    System.out.println("------------  datra fff : " + f.getAbsolutePath());
+                    UCrop.of(Uri.fromFile(new File(f.getAbsolutePath())), Uri.fromFile(new File(f.getAbsolutePath())))
+                            .withAspectRatio(1, 1)
+                            .start(DpMakerEditActivity.this);
                 }
                 break;
             case UCrop.REQUEST_CROP:
-                switch (resultCode) {
-                    case RESULT_OK:
-                        System.out.println("------------  datra fff Ucrop: " + data);
-                        Uri output = UCrop.getOutput(data);
-                        System.out.println("------------  datra fff Ucrop output: " + output.getPath());
-                        if (output != null) {
-                            System.out.println("------------  datra fff Ucrop outputq: " + output.getPath());
-                            IvChooseImage.setImageBitmap(BitmapFactory.decodeFile(output.getPath()));
-                            selectedpath = String.valueOf(output.getPath());
-                            IntentSelectedpath = String.valueOf(output.getPath());
-                            return;
-                        }
-                        Toast.makeText(context, getResources().getString(R.string.cannot_retrieve_cropped_image), Toast.LENGTH_SHORT).show();
-                        break;
+                if (resultCode == RESULT_OK) {
+                    System.out.println("------------  datra fff Ucrop: " + data);
+                    Uri output = UCrop.getOutput(data);
+                    System.out.println("------------  datra fff Ucrop output: " + output.getPath());
+                    if (output != null) {
+                        System.out.println("------------  datra fff Ucrop outputq: " + output.getPath());
+                        IvChooseImage.setImageBitmap(BitmapFactory.decodeFile(output.getPath()));
+                        selectedpath = String.valueOf(output.getPath());
+                        IntentSelectedpath = String.valueOf(output.getPath());
+                        return;
+                    }
+                    Toast.makeText(context, getResources().getString(R.string.cannot_retrieve_cropped_image), Toast.LENGTH_SHORT).show();
                 }
                 break;
             case GALLERY_CODE:
-                switch (resultCode) {
-                    case RESULT_OK:
-                        if (data.getStringExtra(Constants.SELECTED_PATH) != null) {
-                            IvChooseImage.setImageBitmap(BitmapFactory.decodeFile(data.getStringExtra(Constants.SELECTED_PATH)));
-                            selectedpath = String.valueOf(data.getStringExtra(Constants.SELECTED_PATH));
-                            IntentSelectedpath = String.valueOf(data.getStringExtra(Constants.SELECTED_PATH));
-                            return;
-                        }
-                        Toast.makeText(context, getResources().getString(R.string.cannot_retrieve_cropped_image), Toast.LENGTH_SHORT).show();
-                        break;
+                if (resultCode == RESULT_OK) {
+                    if (data.getStringExtra(Constants.SELECTED_PATH) != null) {
+                        IvChooseImage.setImageBitmap(BitmapFactory.decodeFile(data.getStringExtra(Constants.SELECTED_PATH)));
+                        selectedpath = String.valueOf(data.getStringExtra(Constants.SELECTED_PATH));
+                        IntentSelectedpath = String.valueOf(data.getStringExtra(Constants.SELECTED_PATH));
+                        return;
+                    }
+                    Toast.makeText(context, getResources().getString(R.string.cannot_retrieve_cropped_image), Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
@@ -499,5 +558,37 @@ public class DpMakerEditActivity extends AppCompatActivity implements View.OnCli
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (selectedpath.equalsIgnoreCase("")) {
+            final Dialog dialog = new Dialog(context);
+            dialog.requestWindowFeature(1);
+            dialog.setContentView(R.layout.dialog_dp_exis);
+            dialog.setCanceledOnTouchOutside(false);
+            dialog.setCancelable(false);
+            DisplayMetrics displayMetrics = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+            Window window = dialog.getWindow();
+            window.setLayout(displayMetrics.widthPixels - 100, -2);
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+            TextView TvCamera = (TextView) dialog.findViewById(R.id.TvCamera);
+            TextView TvGallery = (TextView) dialog.findViewById(R.id.TvGallery);
+            TvCamera.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    dialog.dismiss();
+                }
+            });
+            TvGallery.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    dialog.dismiss();
+                    startActivity(new Intent(context, MainActivity.class));
+                }
+            });
+            dialog.show();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

@@ -130,4 +130,9 @@
     <string name="calls">Calls</string>
     <string name="give_stunning_look_to_your_profile_picture">Give stunning look to your profile picture</string>
     <string name="propic">ProPic</string>
+    <string name="wapp_permission">Click on this button and Allow permission to access your status</string>
+    <string name="allow_storage_access">Allow storage access</string>
+    <string name="select_all">Select All</string>
+    <string name="save">Save</string>
+    <string name="status_not_available">Status not available.</string>
 </resources>

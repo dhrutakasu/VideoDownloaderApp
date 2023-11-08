@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <queries>
+        <package android:name="com.twitter.android" />
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.instagram.android" />
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:allowClearUserData="true"
@@ -15,22 +36,25 @@
         android:theme="@style/Theme.VideoDownloaderApp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.CreationActivity"
+            android:name=".Ui.Activity.WhatsappActivity"
             android:exported="false" />
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.StoryActivity"
+            android:name=".Ui.Activity.CreationActivity"
             android:exported="false" />
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.PreviewActivity"
+            android:name=".Ui.Activity.StoryActivity"
             android:exported="false" />
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.GalleryFolderImagesActivity"
+            android:name=".Ui.Activity.PreviewActivity"
             android:exported="false" />
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.GalleryActivity"
+            android:name=".Ui.Activity.GalleryFolderImagesActivity"
             android:exported="false" />
         <activity
-            android:name="com.app.videodownloaderapp.Ui.Activity.InstagramLoginActivity"
+            android:name=".Ui.Activity.GalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.Activity.InstagramLoginActivity"
             android:exported="false" />
         <activity
             android:name=".Ui.Activity.TwitterActivity"
@@ -102,28 +126,7 @@
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
-
-    <queries>
-        <package android:name="com.twitter.android" />
-        <package android:name="com.whatsapp" />
-        <package android:name="com.whatsapp.w4b" />
-        <package android:name="com.facebook.katana" />
-        <package android:name="com.instagram.android" />
-    </queries>
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.CAMERA" />
 
 </manifest>

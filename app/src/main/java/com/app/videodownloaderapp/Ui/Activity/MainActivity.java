@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(context, FacebookActivity.class));
                 break;
             case R.id.ConsWhatsapp:
+                startActivity(new Intent(context, WhatsappActivity.class));
                 break;
             case R.id.ConsTwitter:
                 startActivity(new Intent(context, TwitterActivity.class));
